@@ -1,2 +1,2 @@
 # NSCCFullStackAppDev
-This repository contains the source code the cool stuff I built during my Full Stack App Development Program at NSCC 
+This repository displays the cool stuff I built during my Full Stack Application Development Graduate Certificate Program at NSCC 
