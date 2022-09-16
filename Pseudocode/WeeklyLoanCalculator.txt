@@ -1,0 +1,7 @@
+PseudoCode/Approach WeeklyLoanCalculator
+-----------------------
+
+substitute the values input by the user in place of formulas.
+and substitute the first formula into the second formula in order to calculate weekly payment.
+
+Proper use of brackets must be made during the mathematical operations and exponentials can be achieved in js by using **
