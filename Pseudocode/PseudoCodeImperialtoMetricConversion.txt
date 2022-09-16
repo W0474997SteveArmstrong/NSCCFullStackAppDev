@@ -1,0 +1,4 @@
+PseudoCode/Approach Imperial to Metric Conversion
+-------------------------------
+
+take inputs from user and substitute it into the given formulas. Use parseInt to shave off decimals and subtract with non-parseInt values to obtain the decimals which are kilograms and grams.
