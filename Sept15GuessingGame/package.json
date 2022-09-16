@@ -1,0 +1,17 @@
+{
+  "name": "input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GuessingGame.js",
+  "scripts": {
+    "start": "node GuessingGame.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "0.0.1",
+    "g": "^2.0.1",
+    "readline-sync": "^1.4.10"
+  }
+}
