@@ -1,0 +1,9 @@
+PseudoCode/Approach Customer Order
+---------------------------
+
+take necessary input using readline-sync.
+
+perform necessary mathematical ops
+using constant rates of delivery and tax provided to get final rates of delivery and total purchase costs.
+
+print out user inputs supplied and program generated outputs using console log
