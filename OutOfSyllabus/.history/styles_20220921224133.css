@@ -1,25 +1,15 @@
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
-div{
-    font-size: 7px;
-}
-
 #div1{
     background-color: blue;
-    padding:10px;
+    padding:5px;
     border:30px solid orange;
     margin:100px ;
     height: 100px;
     width: 100px;
 }
 #div2{
-    background-color: red;
-    padding:10px;
-    border:30px solid maroon;
+    background-color: blreue;
+    padding:5px;
+    border:30px solid orange;
     margin:100px ;
     height: 100px;
     width: 100px;
