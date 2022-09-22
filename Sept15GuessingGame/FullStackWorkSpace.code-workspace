@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Sept21HTMLCSS"
+		},
+		{
+			"path": "../OutOfSyllabus"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OutOfSyllabus",
+		"svn.ignoreMissingSvnWarning": true
+	}
+}
