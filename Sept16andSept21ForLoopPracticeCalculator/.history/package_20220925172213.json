@@ -8,10 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "readline-sync": "^1.4.10",
-    "console": "externalTerminal"
-  },
-  "devDependencies": {},
-  "description": ""
+    "console":external
+    
+  }
 }

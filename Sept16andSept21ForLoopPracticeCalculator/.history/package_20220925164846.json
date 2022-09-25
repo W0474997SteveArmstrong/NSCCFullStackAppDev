@@ -1,17 +1,16 @@
 {
   "name": "input",
   "version": "1.0.0",
-  "main": "calculator.js",
+  "main": "forloopPractice.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "readline-sync": "^1.4.10",
-    "console": "externalTerminal"
-  },
-  "devDependencies": {},
-  "description": ""
+    "readline-sync": "^1.4.10"
+    
+  }
 }

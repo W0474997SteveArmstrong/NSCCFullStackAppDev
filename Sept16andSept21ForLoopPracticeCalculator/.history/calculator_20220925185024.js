@@ -2,6 +2,12 @@
     console.log("********************************");
     console.log(`  Welcome to my calculator `);
     console.log("********************************");
+    /*while(true){
+
+    }
+    How do I print a menu. Done
+    How do I make the print menu a function*/
+
     function menuPrint(){
         console.log(`
     1. Addition
@@ -12,6 +18,7 @@
     `
     );
     }
+
     function arithmeticOperations(){
     menuPrint();
     let chosenOperation=null;
@@ -65,7 +72,9 @@
     let invInput = null;
     function appExitOrRun(invInput){
     if (question=="N"){
+        
         arithmeticOperations();
+
     }
     else if(question=="Y"){
         console.log("Thankyou for using the calculator! Have a great day!");

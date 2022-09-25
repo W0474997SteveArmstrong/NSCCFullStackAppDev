@@ -65,7 +65,9 @@
     let invInput = null;
     function appExitOrRun(invInput){
     if (question=="N"){
+        
         arithmeticOperations();
+
     }
     else if(question=="Y"){
         console.log("Thankyou for using the calculator! Have a great day!");

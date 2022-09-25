@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10",
-    "console": "externalTerminal"
+    "console": "integratedTerminal"
   },
   "devDependencies": {},
   "description": ""

@@ -65,6 +65,7 @@
     let invInput = null;
     function appExitOrRun(invInput){
     if (question=="N"){
+        
         arithmeticOperations();
     }
     else if(question=="Y"){

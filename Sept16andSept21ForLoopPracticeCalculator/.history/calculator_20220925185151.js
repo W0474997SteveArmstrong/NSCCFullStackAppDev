@@ -54,6 +54,7 @@
     }
     else if(5==chosenOperation){
         console.log("Thankyou for using the calculator! Have a great day!");
+        
     }
     else{
         console.log("Invalid input.Please select a valid option corresponding to the math operation you wish to perform ");
