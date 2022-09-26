@@ -26,24 +26,18 @@
         let firstNum =null;
         let secondNum =null;
         const operationArr = [1,2,3,4];
-        if(operationArr.includes(chosenOperation)){
+        if(operationArr.includes){
         while(null==firstNum){
         firstNum = Number(rls.question("Please enter any number ranging from 0 to 9: "));
-        if(0==firstNum){
-            firstNum=null;
-            console.log(" ");
-            console.log("No input received");
-            console.log(" ");
+        if(null==firstNum){
+            console.log("No input received. Please enter a number ranging from 0 to 9: ")
         }
         }
         console.log(" ");
         while(null==secondNum){
         secondNum = Number(rls.question("Please enter another number ranging from 0 to 9: "));
-        if(0==secondNum){
-            secondNum=null;
-            console.log(" ");
-            console.log("No input received");
-            console.log(" ");
+        if(null==secondNum){
+            console.log("No input received. Please enter a number ranging from 0 to 9: ")
         }
         }
         console.log(" ");
@@ -62,10 +56,10 @@
                 console.log('The division of numbers is: ',firstNum/secondNum);
                 break;     
         }
-        flag=2;
         }//If chosen operation in 1,2,3,4 exit
         else if(5==chosenOperation){
             console.log("Thankyou for using the calculator! Have a great day!");
+            flag=1;
         }
         else{
             console.log("Invalid input.Please select a valid option corresponding to the math operation you wish to perform ");
@@ -73,14 +67,14 @@
         }
         }
         arithmeticOperations();
-        if(flag==2){
+        if(1!=flag){
         let question = rls.question("If you want to exit calculation, type Y else type N: ");
         let invInput = null;
         function appExitOrRun(invInput){
-        if ("N"==invInput){
+        if (question=="N"){
             arithmeticOperations();
         }
-        else if("Y"==invInput){
+        else if(question=="Y"){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
         else{
@@ -88,6 +82,6 @@
             appExitOrRun(invInput);
         }
         }
-        appExitOrRun(question);
-    }//flag=2 exit
+        appExitOrRun();
+    }
 

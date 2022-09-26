@@ -42,8 +42,7 @@
         if(0==secondNum){
             secondNum=null;
             console.log(" ");
-            console.log("No input received");
-            console.log(" ");
+            console.log("No input received")
         }
         }
         console.log(" ");
@@ -66,6 +65,7 @@
         }//If chosen operation in 1,2,3,4 exit
         else if(5==chosenOperation){
             console.log("Thankyou for using the calculator! Have a great day!");
+            flag=1;
         }
         else{
             console.log("Invalid input.Please select a valid option corresponding to the math operation you wish to perform ");
@@ -73,14 +73,14 @@
         }
         }
         arithmeticOperations();
-        if(flag==2){
+        if(1!=flag && flag==2){
         let question = rls.question("If you want to exit calculation, type Y else type N: ");
         let invInput = null;
         function appExitOrRun(invInput){
-        if ("N"==invInput){
+        if (question=="N"){
             arithmeticOperations();
         }
-        else if("Y"==invInput){
+        else if(question=="Y"){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
         else{
@@ -88,6 +88,6 @@
             appExitOrRun(invInput);
         }
         }
-        appExitOrRun(question);
-    }//flag=2 exit
+        appExitOrRun();
+    }
 

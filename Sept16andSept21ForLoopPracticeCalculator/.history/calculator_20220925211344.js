@@ -1,11 +1,10 @@
     /*This assignment deals with the use of switch case in the calculator app.
-    Knowledge and concepts of functions,arrays,loops,if-else statements,readline-sync have also been implemented. */
+    Knowledge and concepts of functions,arrays,loops,if-else statements have also been implemented. */
     
         const rls = require('readline-sync');
         console.log("********************************");
         console.log(`  Welcome to my calculator `);
         console.log("********************************");
-        let flag = 0;
         function menuPrint(){
             console.log(`
         1. Addition
@@ -25,25 +24,18 @@
         console.log(" ");
         let firstNum =null;
         let secondNum =null;
-        const operationArr = [1,2,3,4];
-        if(operationArr.includes(chosenOperation)){
+        if(chosenOperation in [1,2,3,4]){
         while(null==firstNum){
         firstNum = Number(rls.question("Please enter any number ranging from 0 to 9: "));
-        if(0==firstNum){
-            firstNum=null;
-            console.log(" ");
-            console.log("No input received");
-            console.log(" ");
+        if(null==firstNum){
+            console.log("No input received. Please enter a number ranging from 0 to 9: ")
         }
         }
         console.log(" ");
         while(null==secondNum){
         secondNum = Number(rls.question("Please enter another number ranging from 0 to 9: "));
-        if(0==secondNum){
-            secondNum=null;
-            console.log(" ");
-            console.log("No input received");
-            console.log(" ");
+        if(null==secondNum){
+            console.log("No input received. Please enter a number ranging from 0 to 9: ")
         }
         }
         console.log(" ");
@@ -62,8 +54,7 @@
                 console.log('The division of numbers is: ',firstNum/secondNum);
                 break;     
         }
-        flag=2;
-        }//If chosen operation in 1,2,3,4 exit
+        }
         else if(5==chosenOperation){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
@@ -73,14 +64,13 @@
         }
         }
         arithmeticOperations();
-        if(flag==2){
         let question = rls.question("If you want to exit calculation, type Y else type N: ");
         let invInput = null;
         function appExitOrRun(invInput){
-        if ("N"==invInput){
+        if (question=="N"){
             arithmeticOperations();
         }
-        else if("Y"==invInput){
+        else if(question=="Y"){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
         else{
@@ -88,6 +78,5 @@
             appExitOrRun(invInput);
         }
         }
-        appExitOrRun(question);
-    }//flag=2 exit
+        appExitOrRun();
 

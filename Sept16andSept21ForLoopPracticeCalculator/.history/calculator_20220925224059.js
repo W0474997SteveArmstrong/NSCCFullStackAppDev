@@ -80,7 +80,7 @@
         if ("N"==invInput){
             arithmeticOperations();
         }
-        else if("Y"==invInput){
+        else if(""){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
         else{

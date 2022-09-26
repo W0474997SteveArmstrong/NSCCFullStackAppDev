@@ -1,0 +1,17 @@
+#red{
+    background-color: red;
+    width: 350px;
+    padding: 10px;
+    border: 15px;
+    border-style: solid;
+    /* margin-bottom:10px ; */
+}
+#blue{
+    background-color:blue;
+    width: 350px;
+    position: relative;
+}
+#green{
+    background-color: green;
+    width: 350px;
+}

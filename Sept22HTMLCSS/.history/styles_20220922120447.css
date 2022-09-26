@@ -1,0 +1,15 @@
+#red{
+    background-color: red;
+    width: 350px;
+    padding: 10px;
+    border: 15px;
+    border
+}
+#blue{
+    background-color:blue;
+    width: 350px;
+}
+#green{
+    background-color: green;
+    width: 350px;
+}

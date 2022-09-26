@@ -77,10 +77,10 @@
         let question = rls.question("If you want to exit calculation, type Y else type N: ");
         let invInput = null;
         function appExitOrRun(invInput){
-        if ("N"==invInput){
+        if (question=="N"){
             arithmeticOperations();
         }
-        else if("Y"==invInput){
+        else if(question=="Y"){
             console.log("Thankyou for using the calculator! Have a great day!");
         }
         else{
@@ -88,6 +88,6 @@
             appExitOrRun(invInput);
         }
         }
-        appExitOrRun(question);
-    }//flag=2 exit
+        appExitOrRun(null);
+    }
 
