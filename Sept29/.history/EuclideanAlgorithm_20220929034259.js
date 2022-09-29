@@ -14,9 +14,6 @@ function euclidianAlgorithm(num1,num2){
 //(2%4) step1--> 2/4 =  0.5   Take the whole number and ignore decimal part so quotient is 0. 
 /* Multiply quotient * divisor --> 0 * 4 = 0 Dividend - this value = remainder or modulo i.e. 2-0 = 2 */
 /* Dividend = Quotient * Divisor + Remainder */
-
-console.log(euclidianAlgorithm(2,4));
-
-/* (3,9) set of numbers returns value (9,3) in the first iteration and (3,0) in the second iteration
-and since num2=0 , num1=9 is printed in the console. */
+// console.log(euclidianAlgorithm(2,4));
+/* (3,9) set of numbers returns value (9,0) */
 console.log(euclidianAlgorithm(3,9));

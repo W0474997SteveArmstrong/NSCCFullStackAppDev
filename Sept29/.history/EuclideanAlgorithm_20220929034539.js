@@ -17,6 +17,6 @@ function euclidianAlgorithm(num1,num2){
 
 console.log(euclidianAlgorithm(2,4));
 
-/* (3,9) set of numbers returns value (9,3) in the first iteration and (3,0) in the second iteration
+/* (3,9) set of numbers returns value (9,3) in the first iteration and (9,0) in the second iteration
 and since num2=0 , num1=9 is printed in the console. */
 console.log(euclidianAlgorithm(3,9));
