@@ -79,7 +79,7 @@ its better the individual element gets distinguished from the rest */
 
    /* This is used to remove the underline which is usually seen when we use links */
    text-decoration: none;
-   color: red;
+   color: white;
 }
 /* type hover and the colon automatically appears. */
 #navbar ul li a:hover{

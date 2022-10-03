@@ -79,12 +79,12 @@ its better the individual element gets distinguished from the rest */
 
    /* This is used to remove the underline which is usually seen when we use links */
    text-decoration: none;
-   color: red;
+   color: white;
 }
 /* type hover and the colon automatically appears. */
 #navbar ul li a:hover{
     /* While hovering over the link, it turns black */
-    color: black;
+    color: ;
     /* While hovering over the link, it gets a background color of white */
     background-color: white;
 }
@@ -93,7 +93,7 @@ its better the individual element gets distinguished from the rest */
 
 #navbar::before{
     content: " ";
-    background-color: greenyellow;
+    background-color: black;
     position: absolute;
     height: 100%;
     width: 100%;

@@ -1,0 +1,53 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+h1{
+    text-align: center;
+    color: black;
+}
+h4{
+    text-align:center;
+    color: green;
+}
+
+footer{
+    padding: 5px;
+    color:black;
+    background-color: bisque;
+    text-align: center;
+    margin:5%
+}
+
+table{
+    table-layout: fixed;
+    justify-content: center;
+}
+
+#fish1{
+    width:100%
+}
+#fish2{
+    width:100%
+}
+html{
+    margin: 0px;
+}
+fishImagesSideBySideInADiv{
+    float:left;
+    width:50%;
+    display:table;
+    padding:5px;
+}
+divsurroundingfirstfishimage{
+    width:50%
+}
+divsurroundingsecondfishimage{
+    width:50%
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+}
+
