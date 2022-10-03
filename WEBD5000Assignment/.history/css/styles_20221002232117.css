@@ -114,7 +114,7 @@ its better the individual element gets distinguished from the rest */
 
 #navbar{
     /* The entire navbar gets its height reduced and actually starts looking
-    like a navbar with this single loc.*/
+    like a navbar with this single loc. How cool is that man! */
     position: relative;
 }
 /* Home section */
@@ -156,6 +156,24 @@ its better the individual element gets distinguished from the rest */
     padding: 4px 8px;
 }
 
+/* Contact Section */
+
+ #contact{
+    position: relative;
+ }
+ #contact ::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1 ;
+    opacity: 0.7;
+ }
+ /* Contact us section */
+/* #contact-box form{
+    width:80%;
+} */
+ 
 
  
 
