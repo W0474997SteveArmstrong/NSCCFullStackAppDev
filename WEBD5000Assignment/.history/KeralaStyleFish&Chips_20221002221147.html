@@ -1,0 +1,92 @@
+<!-- 1) Basic HTML template/tags demonstrated correctly (must include a title in the
+head)
+2)TODO At least 3 pages that can be navigated between (probably Main, Menu and
+Contact pages)
+3) At least one HTML List 
+4) At least one Image
+5) At least 1 HTML Comment
+6) At least one HTML Table
+7) CSS selectors (at least three types.....probably element, class, and id)
+8) Google Fonts (or other 3rd party font)
+9) Background color or image
+10)TODO At least 3 links (can be internal or external links) 
+WEBD5000 HTML & CSS
+Assignment 1 (10%) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Style Fish & Chips</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- nav#idName -->
+     <nav id="navbar">
+        <!-- div#idName -->
+        <div id="logo">
+         <img src="images/logo.png" alt="Thulasi Annante logo"> 
+        </div>
+
+        <ul>
+            <!-- li.classname{<a></a>}*3 -->
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Menu</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+
+        <h1 class="heading-primary">Welcome to Kerala Style Fish & Chips</h1>
+        <p>Sea Food from God's own country made with love.
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <h4>Today's Specials</h4>
+    <!-- Table tag has been used to display the menu -->
+     <table border="1">
+        <tr><th>Item Name</th><th>Item Description</th><th>Item Rate</th></tr>
+        <tr><td>Shrimp & Chips</td><td>Jumbo shrimp lightly breaded,served with house-made cocktail sauce</td><td>16</td></tr>
+        <tr><td>Clams & Chips</td><td>Lightly battered Digby clams</td><td>18</td></tr>
+        <tr><td>Scallops & Chips</td><td>Lightly battered scallops,served with tartar sauce</td><td>18</td></tr>
+        <tr><td>Big Buoy Platter</td><td>two pieces of haddock,calamari,shrimp,scallops,clams&fries</td><td>40</td></tr>
+        <tr><td>Lobster Roll</td><td>Served on a brioche bun,lobster,chipotle mayo,lettuce & red onion</td><td>10</td></tr>
+    </table>
+    <br>
+    
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                    <div class="form-group"> 
+                        
+                    </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="fishImagesSideBySideInADiv">
+        <div class="divsurroundingfirstfishimage">
+    <img src="https://media.istockphoto.com/photos/grilled-salmon-with-french-fries-and-asparagus-picture-id1091500222?s=612x612" id="fish1" alt="">
+</div>
+<div src="divsurroundingsecondfishimage">
+    <img src="https://cdn.pixabay.com/photo/2020/06/29/08/10/salmon-5351808__340.jpg" id="fish2" alt="">
+</div>
+</div>
+<footer>
+        <strong> <u>Contact Information</u> 
+             <br>
+             <br>
+        Phone Number:  +1 7827784830 
+        <br>
+        Email: <a href="mailto:stevearmstrong691007@gmail.com">stevearmstrong691007@gmail.com</a>
+    </footer>
+</body>
+</html>

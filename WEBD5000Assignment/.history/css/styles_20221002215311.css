@@ -5,10 +5,15 @@
 h1{
     text-align: center;
     color: black;
+    background-color: whitesmoke;
 }
 h4{
     text-align:center;
     color: green;
+    background-color: white;
+}
+p{
+    background-color: azure;
 }
 
 footer{
@@ -22,6 +27,10 @@ footer{
 table{
     table-layout: fixed;
     justify-content: center;
+    background-color: blanchedalmond;
+    /* This helps us to center the table */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #fish1{
@@ -79,14 +88,15 @@ its better the individual element gets distinguished from the rest */
 
    /* This is used to remove the underline which is usually seen when we use links */
    text-decoration: none;
-   color: red;
+   color: black;
+   background-color: white;
 }
 /* type hover and the colon automatically appears. */
 #navbar ul li a:hover{
     /* While hovering over the link, it turns black */
     color: black;
     /* While hovering over the link, it gets a background color of white */
-    background-color: white;
+    background-color: mediumseagreen;
 }
 
 /* Type before and the colons appear automatically */
@@ -106,3 +116,39 @@ its better the individual element gets distinguished from the rest */
     like a navbar with this single loc. How cool is that man! */
     position: relative;
 }
+/* Home section */
+
+#home{
+    /* The order of execution of html by default is top to bottom. display:flex
+    Makes the vertically placed content as horizontal or in row form */
+    display:flex;
+    /* Since the row form isnt good to look at, we change it to column form */
+    /* This makes our button take up the entire horizontal space just like a div.
+    Which doesn't look good. */
+    flex-direction: column;
+    /* We try to overcome these limitations by giving centre alignment */
+    justify-content: center;
+    align-items: center;
+    /* Giving it some padding from our navbar */
+    padding: 3px 200px;
+}
+
+#home::before{
+    content: " ";
+    background:url('../images/fishwrap.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* The wordings become on top of the black background */
+    z-index: -1;
+    opacity: 0.89;
+
+}
+/* Utility Classes */
+
+.h-primary{
+    font
+}
+
+ 
+

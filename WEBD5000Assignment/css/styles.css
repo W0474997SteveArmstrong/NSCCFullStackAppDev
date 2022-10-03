@@ -1,0 +1,180 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+/* 7) CSS selectors (at least three types.....probably element, class, and id) */
+h1{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+h4,h3{
+    text-align:center;
+    color: green;
+    background-color: white;
+}
+p{
+    background-color: azure;
+}
+
+footer{
+    padding: 5px;
+    color:black;
+    background-color: bisque;
+    text-align: center;
+    margin:5%
+}
+
+table{
+    table-layout: fixed;
+    justify-content: center;
+    background-color: blanchedalmond;
+    /* This helps us to center the table */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fish1{
+    width:100%
+}
+#fish2{
+    width:100%
+}
+html{
+    margin: 0px;
+}
+fishImagesSideBySideInADiv{
+    float:left;
+    width:50%;
+    display:table;
+    padding:5px;
+}
+divsurroundingfirstfishimage{
+    width:50%
+}
+divsurroundingsecondfishimage{
+    width:50%
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+}
+
+/* Navigation Bar:List Styling */
+
+/* The unordered list which was like a drop down, became a single line horizontally */
+/* Converts column style to row style */
+#navbar ul{
+    display: flex;
+    position: relative;
+}
+/* Now let's add colour to the list item inside the unordered list */
+
+#navbar ul li{
+    /* color: aqua; */
+    /* This removes the bullet point */
+    list-style: none;
+    /* background-color:  ; */
+    font-size: 1.3rem;
+}
+/* Let's add padding to the a tag since we may go for a hover effect so
+its better the individual element gets distinguished from the rest */
+#navbar ul li a{
+    /* By default, the display is inline. We are setting it to block since to give
+    padding, the display has to be block. */
+   display: block;
+   padding:3px 22px;
+   /* Need to find out why or what border-radius is */
+   border-radius: 20px;
+
+   /* This is used to remove the underline which is usually seen when we use links */
+   text-decoration: none;
+   color: black;
+   background-color: white;
+}
+/* type hover and the colon automatically appears. */
+#navbar ul li a:hover{
+    /* While hovering over the link, it turns black */
+    color: black;
+    /* While hovering over the link, it gets a background color of white */
+    background-color: mediumseagreen;
+}
+
+/* Type before and the colons appear automatically */
+
+#navbar::before{
+    content: " ";
+    background-color: greenyellow;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* The wordings become on top of the black background */
+    z-index: -1;
+}
+
+#navbar{
+    /* The entire navbar gets its height reduced and actually starts looking
+    like a navbar with this single loc. How cool is that man! */
+    position: relative;
+}
+/* Home section */
+
+#home{
+    /* The order of execution of html by default is top to bottom. display:flex
+    Makes the vertically placed content as horizontal or in row form */
+    display:flex;
+    /* Since the row form isnt good to look at, we change it to column form */
+    /* This makes our button take up the entire horizontal space just like a div.
+    Which doesn't look good. */
+    flex-direction: column;
+    /* We try to overcome these limitations by giving centre alignment */
+    justify-content: center;
+    align-items: center;
+    /* Giving it some padding from our navbar */
+    padding: 3px 200px;
+}
+
+#home::before{
+    content: " ";
+    background:url('../images/fishwrap.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* The wordings become on top of the black background */
+    z-index: -1;
+    opacity: 0.89;
+
+}
+/* Utility Classes */
+
+.heading-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    font-size: 1.8rem;
+    padding: 4px 8px;
+}
+
+/* Contact Section */
+
+ #contact{
+    position: relative;
+ }
+ #contact ::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1 ;
+    opacity: 0.7;
+ }
+ /* Contact us section */
+/* #contact-box form{
+    width:80%;
+} */
+ 
+
+ 
+
