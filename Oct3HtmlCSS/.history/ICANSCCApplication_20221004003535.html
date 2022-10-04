@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSCC Application</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form action="https://www.httpbin.org/post" method="POST">
+      <h1>NSCC Program Application</h1>
+      <h3>Personal Information</h3>
+      <span> (please print clearly)</span>
+      <table> 
+          <tr>
+            <td colspan="10">
+              <label for="labelFirstName">
+                Full name (first,middle,last)
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" class="classFullNameTxtArea" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="labelNameAppearClassList">
+                (This name will appear in all communications, class lists, and
+                on your credential.)
+              </label>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7">
+              <label for=""> Other name (first, last) </label>
+              <br/>
+            </td>
+            <td colspan="1"></td>
+            <td colspan="7">
+                <div id="dobDiv">
+              <label for=""> Date of birth (month/day/year) </label>
+              </div>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5"id="otherNameTextInput">
+              <input type="text" class="classOtherNameTextInput" />
+            </td>
+            <td colspan="1"></td>
+            <td colspan="4">
+              <input type="text" class="classDOBTextInput" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="">
+                (If another name appears on your supporting
+                documentation/transcripts include it here. eg: Maiden name)
+              </label>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td class="classGenderIdentity">
+              <label for=""> Gender Identity: </label>
+            </td>
+            <td>
+              <input type="checkbox" name="Male" id="Male" />
+            </td>
+            <td>
+              <label for=""> Male </label>
+            </td>
+            <td>
+              <input type="checkbox" name="Female" id="Female" />
+            </td>
+            <td>
+              <label for=""> Female </label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Non-binary/another identity:"
+                id="Non-binary/another identity:"
+              />
+            </td>
+            <td>
+              <label for=""> Non-binary/another identity: </label>
+            </td>
+            <td>
+              <input type="text" />
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for=""> Apartment number </label>
+              <br/>
+            </td>
+            <td>
+              <label for="">
+                Mailing address (street address, rural route or P.O. Box)
+              </label>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" />
+              <br/>
+            </td>
+            <td>
+              <input type="text" />
+              <br/>
+            </td>
+          </tr>
+      </table>
+    </form>
+  </body>
+</html>

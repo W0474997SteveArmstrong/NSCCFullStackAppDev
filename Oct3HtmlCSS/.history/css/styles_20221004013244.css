@@ -1,0 +1,44 @@
+h1{
+    color:#234383;
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+h3{
+    color:#234383;
+    font-family: sans-serif;
+    font-size: 11pt;
+    display: inline;
+}
+span{
+    font-family: sans-serif;
+    font-size: 9.5pt;
+}
+.classFullNameTextInput{
+    display: block;
+    width:670%; 
+   
+}
+.classOtherNameTextInput{
+display: block;
+width: 98%;
+}
+.classDOBTextInput{
+    display: block;
+    width: 97%;
+}
+.classGenderIdentity{
+    width: 20px;
+}
+.classNonBinaryTextInput{
+    width: 236%;
+}
+table{
+    width: 100%;
+}
+
+.classApartmentNumberTextInput{
+width: 80%;
+}
+
+.
+
