@@ -1,0 +1,21 @@
+#first{
+min-height: 100px;
+}
+#second{
+min-height: 200px;
+}
+#third{
+min-height: 300px;
+}
+
+div{
+    background-color: blue;
+    border: 1px solid red;
+    max-width: 20%;
+}
+
+#container{
+    background-color: orange;
+    border: 2px solid black;
+    min-width: 80%;
+}

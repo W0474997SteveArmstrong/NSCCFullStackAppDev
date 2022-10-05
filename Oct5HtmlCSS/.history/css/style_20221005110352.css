@@ -1,0 +1,13 @@
+#first{
+min-height: 100px;
+}
+#second{
+min-height: 200px;
+}
+#third{
+min-height: 300px;
+}
+
+div{
+    background-color: buttonface;
+}

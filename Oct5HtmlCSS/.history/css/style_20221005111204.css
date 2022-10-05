@@ -1,0 +1,25 @@
+#first{
+min-height: 100px;
+}
+#second{
+min-height: 200px;
+}
+#third{
+min-height: 300px;
+}
+
+div{
+    background-color: grey;
+    border: 1px solid red;
+    /* This gives the orange colour for container */
+    min-width: 20%;
+    /* Item width reduces and becomes relative to the container */
+    
+}
+
+#container{
+    background-color: orange;
+    border: 2px solid black;
+    min-width: 80%;
+    display: flex;
+}
