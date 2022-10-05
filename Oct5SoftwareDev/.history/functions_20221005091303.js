@@ -1,5 +1,6 @@
 const nameArr = ["Steve","Annet","Armstrong"];
 function nameOfFunction(nameArr){
+
     //Looping through an array
  nameArr.forEach(element => {
         console.log("Hi " +element +"!");
@@ -26,6 +27,4 @@ nameOfFunction(nameArr);
 
 //(for in), (for each), (for of) we can use const to declare since the object gets
 //destroyed in each iteration.
-//when we use index for loop i.e for (let index=0; index<arr.length;index++){
 
-//}

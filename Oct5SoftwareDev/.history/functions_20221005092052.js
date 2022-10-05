@@ -1,5 +1,11 @@
 const nameArr = ["Steve","Annet","Armstrong"];
 function nameOfFunction(nameArr){
+
+    array.forEach(element => {
+        
+    });
+
+
     //Looping through an array
  nameArr.forEach(element => {
         console.log("Hi " +element +"!");
