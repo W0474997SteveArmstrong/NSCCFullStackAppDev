@@ -30,10 +30,9 @@ nameOfFunction(nameArr);
 
 function nameOfAnotherFunction(nameArr,strFirstName){
 
-    nameArr.push(strFirstName);
-    return nameArr;
+    return nameArr.push(strFirstName);
 }
-console.log("Added item to array: "+nameOfAnotherFunction(nameArr,strFirstName));
+console.log(nameOfAnotherFunction(nameArr,strFirstName);
 
 
 //(for in), (for each), (for of) we can use const to declare since the object gets

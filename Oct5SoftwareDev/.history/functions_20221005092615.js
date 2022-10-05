@@ -1,5 +1,4 @@
 const nameArr = ["Steve","Annet","Armstrong"];
-strFirstName="Luke";
 function nameOfFunction(nameArr){
     //Looping through an array
  nameArr.forEach(element => {
@@ -28,13 +27,9 @@ nameOfFunction(nameArr);
 
 // Alternate way of doing
 
-function nameOfAnotherFunction(nameArr,strFirstName){
-
-    nameArr.push(strFirstName);
-    return nameArr;
+function nameOfAnotherFunction{
+    
 }
-console.log("Added item to array: "+nameOfAnotherFunction(nameArr,strFirstName));
-
 
 //(for in), (for each), (for of) we can use const to declare since the object gets
 //destroyed in each iteration.

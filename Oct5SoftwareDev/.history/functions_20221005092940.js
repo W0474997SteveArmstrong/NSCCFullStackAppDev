@@ -30,8 +30,7 @@ nameOfFunction(nameArr);
 
 function nameOfAnotherFunction(nameArr,strFirstName){
 
-    nameArr.push(strFirstName);
-    return nameArr;
+    return nameArr.
 }
 console.log("Added item to array: "+nameOfAnotherFunction(nameArr,strFirstName));
 
