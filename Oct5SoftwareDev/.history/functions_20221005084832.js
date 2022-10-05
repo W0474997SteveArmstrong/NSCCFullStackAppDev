@@ -1,0 +1,4 @@
+const nameArr = 
+function nameOfFunction(){
+
+}
