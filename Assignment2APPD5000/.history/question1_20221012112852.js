@@ -36,7 +36,6 @@ let arrAfterRemovingElement = function randomRemoveElementOfArr(finalArr) {
 };
 //finalArr is converted back to String
 let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
-fs.writeFileSync("files/fileUsedForWriting", alteredText);
 console.log("--------------------------------");
 console.log("AlteredText");
 console.log("--------------------------------");

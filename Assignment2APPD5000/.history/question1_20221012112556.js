@@ -1,4 +1,4 @@
-//Assignment2 question1
+// This Assignment2 question1 tests the knowledge of readfilesync
 let COUNTER = 1;
 //Here fs means file synchronus
 const fs = require("fs");
@@ -18,6 +18,7 @@ let finalArr = function fileRead(fs) {
         //on every iteration of the for loop. At the end of the loop, the entire
         //file contents are stored in it.
         totalModifiedLineArr.push(modifiedLineArr);
+        console.log("ModifiedLine: ", modifiedLine);
       } else {
         let uppercaseLine = line.toUpperCase();
         let modifiedLine = COUNTER++ + ":" + " " + uppercaseLine;
@@ -28,16 +29,13 @@ let finalArr = function fileRead(fs) {
   return totalModifiedLineArr;
 };
 finalArr(fs);
-//randomly removes an element from the final Array
 let arrAfterRemovingElement = function randomRemoveElementOfArr(finalArr) {
-  const finalArrRandomIndex = Math.floor(Math.random() * finalArr.length);
-  finalArr.splice(finalArrRandomIndex, 1);
+  const finalArrRandomIndex= Math.floor(Math.random() * finalArr.length);
+  finalArr.splice(finalArrRandomIndex,1);
   return finalArr;
-};
-//finalArr is converted back to String
+}
 let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
-fs.writeFileSync("files/fileUsedForWriting", alteredText);
 console.log("--------------------------------");
-console.log("AlteredText");
+console.log("AlteredText")
 console.log("--------------------------------");
 console.log(alteredText);

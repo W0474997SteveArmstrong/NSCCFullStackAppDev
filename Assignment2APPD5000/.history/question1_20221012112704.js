@@ -28,15 +28,12 @@ let finalArr = function fileRead(fs) {
   return totalModifiedLineArr;
 };
 finalArr(fs);
-//randomly removes an element from the final Array
 let arrAfterRemovingElement = function randomRemoveElementOfArr(finalArr) {
   const finalArrRandomIndex = Math.floor(Math.random() * finalArr.length);
   finalArr.splice(finalArrRandomIndex, 1);
   return finalArr;
 };
-//finalArr is converted back to String
 let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
-fs.writeFileSync("files/fileUsedForWriting", alteredText);
 console.log("--------------------------------");
 console.log("AlteredText");
 console.log("--------------------------------");
