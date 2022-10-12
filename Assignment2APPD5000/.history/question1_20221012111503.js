@@ -40,11 +40,7 @@ let arrAfterRemovingElement = function randomRemoveElementOfArr(finalArr) {
   console.log("Final Arr is: ", finalArr);
   return finalArr;
 }
-let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
-console.log("--------------------------------");
-console.log("AlteredText")
-console.log("--------------------------------");
-console.log(alteredText);
+arrAfterRemovingElement(totalModifiedLineArr).;
 //displays the original text in the file on screen
 
 // //converts String to array

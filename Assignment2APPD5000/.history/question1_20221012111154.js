@@ -31,20 +31,16 @@ let finalArr = function fileRead(fs) {
   return totalModifiedLineArr;
 };
 finalArr(fs);
-let arrAfterRemovingElement = function randomRemoveElementOfArr(finalArr) {
+function randomRemoveElementOfArr(finalArr) {
   console.log("FinalArr length before splice is: ", finalArr.length);
   const finalArrRandomIndex= Math.floor(Math.random() * finalArr.length);
   console.log("FinalArrRandomIndex is: "+finalArrRandomIndex);
   finalArr.splice(finalArrRandomIndex,1);
   console.log("FinalArr length after splice is: ", finalArr.length);
   console.log("Final Arr is: ", finalArr);
-  return finalArr;
+  return final
 }
-let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
-console.log("--------------------------------");
-console.log("AlteredText")
-console.log("--------------------------------");
-console.log(alteredText);
+randomRemoveElementOfArr(totalModifiedLineArr);
 //displays the original text in the file on screen
 
 // //converts String to array

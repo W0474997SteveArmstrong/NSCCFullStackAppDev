@@ -44,7 +44,7 @@ let alteredText = arrAfterRemovingElement(totalModifiedLineArr).join("\n");
 console.log("--------------------------------");
 console.log("AlteredText")
 console.log("--------------------------------");
-console.log(alteredText);
+console.log(expectedOutput);
 //displays the original text in the file on screen
 
 // //converts String to array
