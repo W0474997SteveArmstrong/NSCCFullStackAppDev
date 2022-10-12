@@ -34,8 +34,8 @@ finalArr(fs);
 function randomRemoveElementOfArr(finalArr) {
   console.log("FinalArr length before splice is: ", finalArr.length);
   const finalArrRandomIndex= Math.floor(Math.random() * finalArr.length);
-  console.log("FinalArrRandomIndex is: "+finalArrRandomIndex);
-  finalArr.splice(finalArrRandomIndex,1);
+  console.log("FinalArrRand"+finalArrRandomIndex);
+  finalArr.splice(finalArrRandomIndex,finalArrRandomIndex+1);
   console.log("FinalArr length after splice is: ", finalArr.length);
   console.log("Final Arr is: ", finalArr);
 }

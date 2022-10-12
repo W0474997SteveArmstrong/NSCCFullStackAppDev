@@ -32,11 +32,10 @@ let finalArr = function fileRead(fs) {
 };
 finalArr(fs);
 function randomRemoveElementOfArr(finalArr) {
-  console.log("FinalArr length before splice is: ", finalArr.length);
-  const finalArrRandomIndex= Math.floor(Math.random() * finalArr.length);
-  console.log("FinalArrRandomIndex is: "+finalArrRandomIndex);
-  finalArr.splice(finalArrRandomIndex,1);
-  console.log("FinalArr length after splice is: ", finalArr.length);
+  finalArr.splice(finalArr[Math.floor(Math.random() * finalArr.length)]);
+  console.log("FinalArr length before pop is: ", finalArr.length);
+  console.log("The element is: ", element);
+  console.log("FinalArr length after pop is: ", finalArr.length);
   console.log("Final Arr is: ", finalArr);
 }
 randomRemoveElementOfArr(totalModifiedLineArr);
