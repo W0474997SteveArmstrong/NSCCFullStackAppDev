@@ -1,5 +1,6 @@
 const CHOICEARR = ["a", "b", "c", "d", "e"];
 const RLS = require('readline-sync');
+const REGEX = /\r?\n/;
 //1.Display AnimalName Menu
 function displayAnimalNameMenu() {
 
