@@ -40,6 +40,6 @@ else{
         actionWordMenu();
     }
     else{
-        usrInp();
+        
     }
 }

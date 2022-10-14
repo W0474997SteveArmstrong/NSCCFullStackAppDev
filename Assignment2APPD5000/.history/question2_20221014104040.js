@@ -24,6 +24,7 @@ let usrInp = function getUserInput(){
 }
 const CHOICEARR=["a","b","c","d","e"];
 //first time method call for animal name. User entered a valid input
+console.log("User Input is: "+usrInp());
 if (CHOICEARR.includes(usrInp())) {
     actionWordMenu();
     //Method call again for the action word.
@@ -31,15 +32,11 @@ if (CHOICEARR.includes(usrInp())) {
 }
 else{
     //for taking input for animal menu in the event user entered an invalid input
-    console.log("Incorrect input, please enter a valid input");
+    do{
         usrInp();
-        console.log("UserInput after do is: ",usrInp());
-        console.log(CHOICEARR.includes(usrInp()));
-    if(CHOICEARR.includes(usrInp())){
-        console.log("UserInput after while is: ",usrInp());
+    }
+    while(CHOICEARR.includes(usrInp())){
         actionWordMenu();
     }
-    else{
-        usrInp();
-    }
+    
 }

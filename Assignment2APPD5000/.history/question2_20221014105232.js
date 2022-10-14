@@ -39,7 +39,4 @@ else{
         console.log("UserInput after while is: ",usrInp());
         actionWordMenu();
     }
-    else{
-        usrInp();
-    }
 }
