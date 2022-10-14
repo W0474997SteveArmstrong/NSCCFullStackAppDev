@@ -23,7 +23,12 @@ function displayActionWordMenu() {
 //2.Take user input
 let userInput = null;
 let usrInp = function getUserInput() {
-    userInput = RLS.question("Enter choice (a-e):");
+    userInput = RLS.question("Enter choice (a-e):").
+    toLowerCase();
+    while (0==userInput) {
+        userInput = RLS.question("Enter choice (a-e):").
+        toLowerCase();
+    }
     return userInput;
 }
 usrInp();
@@ -55,7 +60,7 @@ function checkIfInputIsValidWithoutDisplayingActionMenu() {
         loopUntilUserEntersValidInput(0);
     }
 
-    
+
 }
 //3. Check if the input is correct or not
 function checkIfInputIsValidDisplayingActionMenu() {
@@ -74,10 +79,10 @@ function checkIfInputIsValidDisplayingActionMenu() {
         displayActionWordMenu();
         usrInp();
         if (CHOICEARR.includes(userInput)) {
-           //4.correct input
-           //program exit 
+            //4.correct input
+            //program exit 
         }
-        else{
+        else {
             loopUntilUserEntersValidInput(0);
         }
     }
