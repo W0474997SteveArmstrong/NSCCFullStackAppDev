@@ -49,7 +49,9 @@ function checkIfInputIsValidWithoutDisplayingActionMenu() {
     }
     //7.invalid input
     else {
-        //2.Ask for user input again. User Input is taken until the user enters a valid input.
+        //2.Ask for user input again. 
+        //User Input is taken until the user 
+        //enters a valid input.
         loopUntilUserEntersValidInput(0);
     }
 
@@ -80,5 +82,5 @@ function checkIfInputIsValidDisplayingActionMenu() {
         }
     }
 }
-//3.Check if the input is valid or not.
+//3.Check if the input is valid or not
 checkIfInputIsValidDisplayingActionMenu();
