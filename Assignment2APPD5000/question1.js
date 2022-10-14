@@ -1,12 +1,11 @@
 //Assignment2 question1
 let COUNTER = 1;
-//Here fs means file synchronus
-const fs = require("fs");
 let totalModifiedLineArr = [];
 const REGEX = /\r?\n/;
 let finalArr = function fileRead(fs) {
   //The path used to fetch the file location is the relative path.
   //utf-8 is the encoding format used to prevent reading gibberish content.
+  //Here fs means file synchronus
   fs.readFileSync("files/fileUsedForReading.txt", "utf-8")
     .split(REGEX)
     .forEach(function (line) {
