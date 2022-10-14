@@ -25,6 +25,13 @@ function checkIfInputIsValid(){
         usrInp();
     }
 }
+function checkIfInputIsValidWithoutDisplayingMenu(){
+    if(CHOICEARR.includes(userInput)){
+        console.log("UserInput: ",userInput);
+        //Taking userInput for action menu
+        usrInp();
+    }
+}
 //1.Display AnimalName Menu
 animalNameMenu();
 const RLS = require('readline-sync');
@@ -41,7 +48,10 @@ if (CHOICEARR.includes(usrInp())) {
     //4. Display actionword menu since the input is valid
     actionWordMenu();
     //Method call again for the action word.
+    //2takesinput
     usrInp();
+    //3 checks if input is valid or not
+    checkIfInputIsValid();
     //5.Program ends here in this valid input scenario
 }
 //6 Else is entered for invalid input scenario
