@@ -21,8 +21,7 @@ function checkIfInputIsValid(){
     if(CHOICEARR.includes(userInput)){
         console.log("UserInput: ",userInput);
         actionWordMenu();
-        //Taking userInput for action menu
-        usrInp();
+        usr
     }
 }
 //1.Display AnimalName Menu

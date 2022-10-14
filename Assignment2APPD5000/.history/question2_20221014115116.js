@@ -21,8 +21,6 @@ function checkIfInputIsValid(){
     if(CHOICEARR.includes(userInput)){
         console.log("UserInput: ",userInput);
         actionWordMenu();
-        //Taking userInput for action menu
-        usrInp();
     }
 }
 //1.Display AnimalName Menu
@@ -51,7 +49,7 @@ else{
         usrInp();
         console.log("UserInput after do is: ",userInput);
         console.log(CHOICEARR.includes(userInput));
-        //3.Check if input is valid
+        //8.
    checkIfInputIsValid();
     else{
         console.log("Invalid input.Please enter a valid one");

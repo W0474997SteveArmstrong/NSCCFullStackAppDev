@@ -21,7 +21,7 @@ function checkIfInputIsValid(){
     if(CHOICEARR.includes(userInput)){
         console.log("UserInput: ",userInput);
         actionWordMenu();
-        //Taking userInput for action menu
+        //Taking 
         usrInp();
     }
 }

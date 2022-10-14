@@ -21,8 +21,6 @@ function checkIfInputIsValid(){
     if(CHOICEARR.includes(userInput)){
         console.log("UserInput: ",userInput);
         actionWordMenu();
-        //Taking userInput for action menu
-        usrInp();
     }
 }
 //1.Display AnimalName Menu
@@ -42,16 +40,14 @@ if (CHOICEARR.includes(usrInp())) {
     actionWordMenu();
     //Method call again for the action word.
     usrInp();
-    //5.Program ends here in this valid input scenario
+    //5.Program ends here in this valid  scenario
 }
-//6 Else is entered for invalid input scenario
 else{
+    //for taking input for animal menu in the event user entered an invalid input
     console.log("Incorrect input, please enter a valid input");
-    //7.for taking input for animal menu in the event user entered an invalid input
         usrInp();
         console.log("UserInput after do is: ",userInput);
         console.log(CHOICEARR.includes(userInput));
-        //3.Check if input is valid
    checkIfInputIsValid();
     else{
         console.log("Invalid input.Please enter a valid one");
