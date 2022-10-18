@@ -39,15 +39,22 @@
         /* This represents the second row of our grid. */
         "photoThree photoFour";
     grid-template-columns: 50% 50%;
-    margin-right: 6%;
+    margin-right: 15%;
 }
 
 /* 6. CSS selectors (at least one attribute and one sibling selector) */
-
-#photoArray>div {
-    border: 2px solid #EEE;
+#photoArray>div:first-child>img {
+    height: 30vh;
+} 
+.imageInGrid>img{
+    height: 30vh;
 }
-
+#photoArray>div:last-child>img {
+    height: 30vh;
+}
+.imageInGrid{
+    cursor: pointer;
+}
 #photoArray>div:first-child {
     grid-area: photoOne;
     cursor: pointer;
@@ -57,25 +64,6 @@
     cursor: pointer;
     
 } 
-#photoArray.image2inGrid{
-    grid-area: photoTwo;
-    cursor: pointer;
-    
-    
-}
-#photoArray.image3inGrid{
-    grid-area: photoThree;
-    cursor: pointer;
-    opacity: 0.6;
-    
-}
-/* #photoArray.image4inGrid{
-    grid-area: photoFour;
-    cursor: pointer;
-    opacity: 0.6;
-    
-} */
-
 
 /* before */
 /* #photoArray img {
