@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&
 display=swap" rel="stylesheet">
-<!-- 4. Include a Favicon -->
+    <!-- 4. Include a Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
@@ -19,10 +19,10 @@ display=swap" rel="stylesheet">
             <div class="col">
                 <div class="slider">
                     <section id="photoArray">
-                        <img src="images/img1.jpg" alt="" onclick="clickme(this)">
-                        <img src="images/img2.jpg" alt="" onclick="clickme(this)">
-                        <img src="images/img3.jpg" alt="" onclick="clickme(this)">
-                        <img src="images/img4.jpg" alt="" onclick="clickme(this)">
+                        <div><img src="images/img1.jpg" alt="" onclick="clickme(this)"></div>
+                        <div class="image2inGrid"><img src="images/img2.jpg" alt="" onclick="clickme(this)"></div>
+                        <div class="image3inGrid"><img src="images/img3.jpg" alt="" onclick="clickme(this)"></div>
+                        <div class="image4inGrid"><img src="images/img4.jpg" alt="" onclick="clickme(this)"></div>
                     </section>
                     <div class="preview">
                         <img src="images/img1.jpg" id="imagebox" alt="">
@@ -41,6 +41,7 @@ display=swap" rel="stylesheet">
                         <i class="fa fa-star-half-o"></i>
                     </div>
                     <p class="price">Brand: Seemati</p>
+                    <!-- 10.At least one HTML form with at least 3 different types of UI controls. -->
                     <p>Size: <select name="size">
                             <option value="select size">select size</option>
                             <option value="small">small</option>

@@ -30,23 +30,73 @@
 /* We are using 4 images. Two images per row and 2 images per column i.e. 2x2 grid */
 #photoArray {
     display: grid;
-    grid-gap: .5em;
+    grid-row-end: .5em;
+    grid-row-start: .5em;
     grid-template-areas:
         /* 2.Proper placement of items in CSS grid*/
         /* This represents the first row of our grid. */
         "photoOne photoTwo"
         /* This represents the second row of our grid. */
-        "photoOne photoTwo";
-    grid-template-columns: 20% 20%;
+        "photoThree photoFour";
+    grid-template-columns: 50% 50%;
+    margin-right: 6%;
 }
+
 /* 6. CSS selectors (at least one attribute and one sibling selector) */
-#photoArray img {
+
+#photoArray>div {
+    border: 2px solid #EEE;
+}
+
+#photoArray>div:first-child {
+    grid-area: photoOne;
+    cursor: pointer;
+}   
+#photoArray>div:last-child {
+    grid-area: photoFour;
+    cursor: pointer;
+    
+} 
+#photoArray.image2inGrid{
+    grid-area: photoTwo;
+    cursor: pointer;
+    
+    
+}
+#photoArray.image3inGrid{
+    grid-area: photoThree;
+    cursor: pointer;
+    opacity: 0.6;
+    
+}
+/* #photoArray.image4inGrid{
+    grid-area: photoFour;
+    cursor: pointer;
+    opacity: 0.6;
+    
+} */
+
+
+/* before */
+/* #photoArray img {
     height: 19vh;
     margin-bottom: 9px;
     cursor: pointer;
     opacity: 0.6;
-}
+} */
 
+/* After*/
+/* #photoArray img {
+    grid-area: photoOne;
+    cursor: pointer;
+    opacity: 0.6;
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid #EEE;
+    border-radius: 5px;
+} */
 #photoArray img:hover {
     opacity: 1;
 }
