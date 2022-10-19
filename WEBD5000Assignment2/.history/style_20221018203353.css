@@ -13,9 +13,6 @@
     transition-duration: 500ms;
     margin-left: 50%;
     overflow:unset;
-    /* 8. At least one CSS transition */
-    transition-timing-function: cubic-bezier(1,.11,0,2.25);
-    
 }
 
 .animation-box:hover{
@@ -24,9 +21,6 @@
     background: rgb(116, 218, 116);
      /* 8. At least one CSS transition */
     transform:rotate(45deg);
-    /* 9. Use of a text or box shadow */
-    /* Box shadow appears while hovering */
-    box-shadow: 20px 20px;
 }
 
 .hero {

@@ -5,28 +5,16 @@
 }
 
 .animation-box{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     align-items: center;
     background: #3DCCC7;
-    /* 8. At least one CSS transition */
     transition-duration: 500ms;
     margin-left: 50%;
-    overflow:unset;
-    /* 8. At least one CSS transition */
-    transition-timing-function: cubic-bezier(1,.11,0,2.25);
-    
 }
 
 .animation-box:hover{
-    /* 8. At least one CSS transition */
-    /* The heading turns green and rotates 45 degrees while hovering */
     background: rgb(116, 218, 116);
-     /* 8. At least one CSS transition */
-    transform:rotate(45deg);
-    /* 9. Use of a text or box shadow */
-    /* Box shadow appears while hovering */
-    box-shadow: 20px 20px;
 }
 
 .hero {
@@ -104,8 +92,10 @@ main{
     
 } 
 
-#photoArray img{
-    transition-duration: 500ms;
+#photo
+
+#photoArray img:hover {
+    opacity: 1;
 }
 
 .preview img {

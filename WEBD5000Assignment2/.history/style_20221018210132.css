@@ -25,7 +25,7 @@
      /* 8. At least one CSS transition */
     transform:rotate(45deg);
     /* 9. Use of a text or box shadow */
-    /* Box shadow appears while hovering */
+    
     box-shadow: 20px 20px;
 }
 
