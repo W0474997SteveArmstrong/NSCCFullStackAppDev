@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Roohi Indian Sarees</title>
+    <!-- 3. Include at least two <meta> tags -->
+    <meta charset="utf-8">
+    <!-- The content meta tag cannot have more than 160 characters inside it. -->
+    <meta name="description" content="It is a single page website that demos 
+    the understanding of CSS grids and some of the other techniques 
+    learn't since Assignment 1.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Describes what exactly is inside the website-->
+    <meta name="keywords" content="sarees,shopping,buy,silk">
+    <!-- Mentions who the author of the website is. -->
+    <meta name="author" content="steve">
+    <!-- 5. Use an external CSS stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&
+display=swap" rel="stylesheet" />
+    <!-- 4. Include a Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+</head>
+<body>
+    <div class="animation-box"><h1>Roohi Indian Sarees</h1></div>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <section id="photoArray">
+                        <div>
+                            <img src="images/img1.jpg" alt="" onclick="clickme(this)" />
+                        </div>
+                        <div class="imageinGrid">
+                            <img src="images/img2.jpg" alt="" onclick="clickme(this)" />
+                        </div>
+                        <div class="imageinGrid">
+                            <img src="images/img3.jpg" alt="" onclick="clickme(this)" />
+                        </div>
+                        <div class="imageinGrid">
+                            <img src="images/img4.jpg" alt="" onclick="clickme(this)" />
+                        </div>
+                    </section>
+                    <div class="preview">
+                        <img src="images/img1.jpg" id="imagebox" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <main class="content">
+                    <p class="brand">Brand: Seemati</p>
+                    <h2>Women Purple Print Kerala Silk Saree</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Brand: Seemati</p>
+                    <!-- 10.At least one HTML form with at least 3 different types of UI controls. -->
+                    <p>
+                        Size:
+                        <select name="size">
+                            <option value="select size">select size</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select>
+                    </p>
+                     <!-- 10.At least one HTML form with at least 3 different types of UI controls. -->
+                    <p>Quantity: <input type="text" value="1" /></p>
+                </main>
+                <button type="button">
+                    <i class="fa fa-shopping-cart"></i>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickme(smallImg) {
+            let fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+
+</html>
