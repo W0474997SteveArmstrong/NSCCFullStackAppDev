@@ -131,12 +131,14 @@ h2 {
 .rating .fa {
     color: #008000;
 }
+
 .price {
     color: purple;
     font-size: 26px;
     font-weight: bold;
     padding-top: 10px;
 }
+
 input {
     width: 30px;
     border: 1px solid #ccc;

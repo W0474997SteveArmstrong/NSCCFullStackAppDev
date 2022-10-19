@@ -117,26 +117,31 @@ p {
     font-size: 12px;
     padding: 2px 5px;
 }
+
 h2 {
     font-size: 45px;
     color: rgb(88, 7, 120);
     margin-bottom: 20px;
     font-family: 'Silkscreen', cursive;
 }
+
 .rating {
     /* Use of flex box */
     display: flex;
     height: 15px;
 }
+
 .rating .fa {
     color: #008000;
 }
+
 .price {
     color: purple;
     font-size: 26px;
     font-weight: bold;
     padding-top: 10px;
 }
+
 input {
     width: 30px;
     border: 1px solid #ccc;
