@@ -5,7 +5,7 @@ const RLS = require("readline-sync");
 let wordchoice = null;
 console.log("The Itsy Bitsy Aardvark");
 console.log("");
-//1.Display Menu
+//1.Display AnimalName Menu
 function displayMenu(wordchoice) {
   console.log("a) " + wordchoice[0]);
   console.log("b) " + wordchoice[1]);
@@ -22,6 +22,7 @@ const lineArr = line.split(REGEX);
 let innerRowArray = [];
 let userInput = null;
 let phrase = null;
+let flag = 0;
 let usrInp = function getUserInput() {
   userInput = RLS.question("Enter choice (a-e):").toLowerCase();
   while (0 == userInput) {
@@ -55,12 +56,23 @@ for (const row of lineArr) {
     console.log("Wordchoice is:", wordchoice);
     console.log("Please choose",phrase+":");
     displayMenu(wordchoice);
-    //Add valid input condition
-    loopUntilUserEntersValidInput(0);
+    usrInp();
     console.log("");
   }
   innerRowArray.pop();
  }
+
+// function displayActionWordMenu() {
+//   // console.log("Please choose an action word ending in 'ed': ");
+//   // console.log("a) jumped");
+//   // console.log("b) flipped");
+//   // console.log("c) looked");
+//   // console.log("d) added");
+//   // console.log("e) squashed");
+// }
+
+
+
 
 // function checkIfInputIsValidWithoutDisplayingActionMenu() {
 //   //3 checks if Input is Correct

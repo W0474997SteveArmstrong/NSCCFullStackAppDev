@@ -58,6 +58,8 @@ for (const row of lineArr) {
     //Add valid input condition
     loopUntilUserEntersValidInput(0);
     console.log("");
+    loopUntilUserEntersValidInput(0);
+    log
   }
   innerRowArray.pop();
  }

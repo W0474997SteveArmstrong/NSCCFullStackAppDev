@@ -5,7 +5,7 @@ const RLS = require("readline-sync");
 let wordchoice = null;
 console.log("The Itsy Bitsy Aardvark");
 console.log("");
-//1.Display Menu
+//1.Display AnimalName Menu
 function displayMenu(wordchoice) {
   console.log("a) " + wordchoice[0]);
   console.log("b) " + wordchoice[1]);

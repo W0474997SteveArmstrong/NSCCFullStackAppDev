@@ -5,7 +5,7 @@ const RLS = require("readline-sync");
 let wordchoice = null;
 console.log("The Itsy Bitsy Aardvark");
 console.log("");
-//1.Display Menu
+//1.Display AnimalName Menu
 function displayMenu(wordchoice) {
   console.log("a) " + wordchoice[0]);
   console.log("b) " + wordchoice[1]);
@@ -29,19 +29,6 @@ let usrInp = function getUserInput() {
   }
   return userInput;
 };
-
-function loopUntilUserEntersValidInput(flag) {
-    while (0 === flag) {
-      usrInp();
-      //3. check if new input taken is correct
-      if (CHOICEARR.includes(userInput)) {
-        //4 correct input
-        // End of Program
-        flag = 1;
-      }
-    }
-  }
-
 //Now loop through the line and split based on comma except the first element
 for (const row of lineArr) {
   console.log("Row is: ", row);
@@ -55,12 +42,33 @@ for (const row of lineArr) {
     console.log("Wordchoice is:", wordchoice);
     console.log("Please choose",phrase+":");
     displayMenu(wordchoice);
-    //Add valid input condition
-    loopUntilUserEntersValidInput(0);
+    usrInp();
     console.log("");
   }
   innerRowArray.pop();
  }
+
+// function displayActionWordMenu() {
+//   // console.log("Please choose an action word ending in 'ed': ");
+//   // console.log("a) jumped");
+//   // console.log("b) flipped");
+//   // console.log("c) looked");
+//   // console.log("d) added");
+//   // console.log("e) squashed");
+// }
+
+let flag = 0;
+function loopUntilUserEntersValidInput(flag) {
+  while (0 === flag) {
+    usrInp();
+    //3. check if new input taken is correct
+    if (CHOICEARR.includes(userInput)) {
+      //4 correct input
+      // End of Program
+      flag = 1;
+    }
+  }
+}
 
 // function checkIfInputIsValidWithoutDisplayingActionMenu() {
 //   //3 checks if Input is Correct
