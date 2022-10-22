@@ -76,7 +76,7 @@ let usrInp = function getUserInput() {
       userInputArrTotal.push(userInput);
       if(userInputArrTotal.includes(A)){
         for(const rowStoryFile of fileRead("files/the_story_file.txt", "utf-8")){
-            console.log("RowStoryFile before change is :", rowStoryFile);
+            console.log("RowStoryFile before change is :", rowStoryFile);a
             let wordRow = rowStoryFile.split(" ");
             console.log("WordRow is: ",wordRow);
             // console.log("Type of RowStoryFile",typeof(rowStoryFile));

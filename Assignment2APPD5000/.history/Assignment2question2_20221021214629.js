@@ -82,8 +82,7 @@ let usrInp = function getUserInput() {
             // console.log("Type of RowStoryFile",typeof(rowStoryFile));
             // console.log("Index rowStoryFile",rowStoryFile.indexOf('_'));
             // console.log("RowStoryFile includes:",rowStoryFile.toString().includes("_"));
-
-            console.log("WordRow value at fourth index is:",wordRow[4]);
+            
 
             rowStoryFile.replace(rowStoryFile.startsWith("_"),userInputPerQuestionDict.A);
             console.log("RowStoryFile after change is :", rowStoryFile);

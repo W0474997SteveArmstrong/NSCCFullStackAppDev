@@ -83,7 +83,7 @@ let usrInp = function getUserInput() {
             // console.log("Index rowStoryFile",rowStoryFile.indexOf('_'));
             // console.log("RowStoryFile includes:",rowStoryFile.toString().includes("_"));
 
-            console.log("WordRow value at fourth index is:",wordRow[4]);
+            console.log(wordRow[3]);
 
             rowStoryFile.replace(rowStoryFile.startsWith("_"),userInputPerQuestionDict.A);
             console.log("RowStoryFile after change is :", rowStoryFile);

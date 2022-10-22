@@ -76,17 +76,8 @@ let usrInp = function getUserInput() {
       userInputArrTotal.push(userInput);
       if(userInputArrTotal.includes(A)){
         for(const rowStoryFile of fileRead("files/the_story_file.txt", "utf-8")){
-            console.log("RowStoryFile before change is :", rowStoryFile);
-            let wordRow = rowStoryFile.split(" ");
-            console.log("WordRow is: ",wordRow);
-            // console.log("Type of RowStoryFile",typeof(rowStoryFile));
-            // console.log("Index rowStoryFile",rowStoryFile.indexOf('_'));
-            // console.log("RowStoryFile includes:",rowStoryFile.toString().includes("_"));
-
-            console.log("WordRow value at fourth index is:",wordRow[4]);
-
-            rowStoryFile.replace(rowStoryFile.startsWith("_"),userInputPerQuestionDict.A);
-            console.log("RowStoryFile after change is :", rowStoryFile);
+            console.log("RowStoryFileis :", rowStoryFile);
+            rowStoryFile.replace(rowStoryFile.startsWith(_),userInputPerQuestionDict.A )
         }
       }
       //User selected choice is reset after every iteration / multiple choice question.

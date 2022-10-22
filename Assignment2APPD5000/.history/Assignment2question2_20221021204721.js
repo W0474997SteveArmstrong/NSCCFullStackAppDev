@@ -36,14 +36,13 @@ let usrInp = function getUserInput() {
     }
     return userInput;
   };
-   let fileRead = function fileInput(relativeFilePath, encoding) {
+function fileRead(relativeFilePath, encoding) {
   let line = null;
   line = FS.readFileSync(relativeFilePath, encoding);
   let lineArr = null;
-   lineArr = line.split(REGEX);
-   return lineArr;
+  lineArr = line.split(REGEX);
 }
-  let userInputArrTotal = [];
+  let userInputArr = [];
   //Now loop through the line and split based on comma except the first element
   function loopingLineByLine(lineArr){
   for (const row of lineArr) {
@@ -52,6 +51,7 @@ let usrInp = function getUserInput() {
     innerRowArray.push(row.split(DELIMITER));
     console.log("The InnerRowArray is: ", innerRowArray);
     let userInputPerQuestionDict=null;
+
     for (let innerRow of innerRowArray) {
       phrase = innerRow[0];
       wordchoice = innerRow.slice(1);
@@ -62,7 +62,7 @@ let usrInp = function getUserInput() {
         D:wordchoice[3],
         E:wordchoice[4]
       }
-      //inner for loop exit
+      //for loop exit
       //If input entered by user is A, then replace story file with Aardvark
       //without hardcoding A to aardvark.
       console.log("value of userInputDict with A as key:",userInputPerQuestionDict.A);
@@ -73,21 +73,9 @@ let usrInp = function getUserInput() {
       //Take valid input from the user
       usrInp();
       //Stores all of the user entered choices to every multiple choice question
-      userInputArrTotal.push(userInput);
-      if(userInputArrTotal.includes(A)){
-        for(const rowStoryFile of fileRead("files/the_story_file.txt", "utf-8")){
-            console.log("RowStoryFile before change is :", rowStoryFile);
-            let wordRow = rowStoryFile.split(" ");
-            console.log("WordRow is: ",wordRow);
-            // console.log("Type of RowStoryFile",typeof(rowStoryFile));
-            // console.log("Index rowStoryFile",rowStoryFile.indexOf('_'));
-            // console.log("RowStoryFile includes:",rowStoryFile.toString().includes("_"));
-
-            console.log("WordRow value at fourth index is:",wordRow[4]);
-
-            rowStoryFile.replace(rowStoryFile.startsWith("_"),userInputPerQuestionDict.A);
-            console.log("RowStoryFile after change is :", rowStoryFile);
-        }
+      userInputArr.push(userInput);
+      if(userInputArr.includes(A)){
+        fileRead("files/the_story_file.txt", "utf-8");
       }
       //User selected choice is reset after every iteration / multiple choice question.
       userInput = null;
@@ -98,10 +86,6 @@ let usrInp = function getUserInput() {
     //array items, so that only the next line gets populated in the next iteration.
     innerRowArray.pop();
   }
-  //outer for loop exit
 }
-//function exit
-//Method Overloading
-loopingLineByLine(fileRead("files/the_choices_file.csv", "utf-8"));
-console.log("UserInputArray is:", userInputArrTotal);
-
+console.log("UserInputArray is:", userInputArr);
+fileRead("files/the_choices_file.csv", "utf-8");
