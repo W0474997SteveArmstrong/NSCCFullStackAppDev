@@ -62,7 +62,7 @@ for (let index = 0; index < myGridsize; index++) {
   /*After getting valid co-ordinates from the user, we place the ship based on those
   co-ordinates in each iteration.*/
   placeShipInGrid(x, y, "O", myGrid);
-  placeShipRandomlyInOpponentGrid("O",opponentGrid,opponentGridSize);
+  placeShipRandomlyInEnemyGrid("O",opponentGrid,opponentGridSize);
   //After placing the Ships, we print the Grid now to witness our changes
   printGrid(opponentGrid, true);
   printGrid(myGrid, false);
@@ -79,20 +79,8 @@ function placeShipInGrid(x,y,shipCharacter,gridArr){
     gridArr[y][x] = shipCharacter;
 }
 
-function placeShipRandomlyInOpponentGrid(shipCharacter,opponentGrid,opponentGridSize ){
-    //Logic:
-    //The opponent must not place a ship at an index position where there is a ship
-    //already
-    let isShipPresentAtIndex = false;
-     while(!isShipPresentAtIndex){
-        let x = getRandomInt(opponentGridSize);
-        let y = getRandomInt(opponentGridSize);
-     }
-}
+function pla
 
-function getRandomInt(opponentGridSize){
-    return Math.floor(Math.random() * Math.floor(opponentGridSize));
-}
 
 //creates a multidimensional array
 function makeGrid(size){

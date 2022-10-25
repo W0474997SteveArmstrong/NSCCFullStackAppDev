@@ -85,14 +85,10 @@ function placeShipRandomlyInOpponentGrid(shipCharacter,opponentGrid,opponentGrid
     //already
     let isShipPresentAtIndex = false;
      while(!isShipPresentAtIndex){
-        let x = getRandomInt(opponentGridSize);
-        let y = getRandomInt(opponentGridSize);
+        let x = getRandomInt(oppo)
      }
 }
 
-function getRandomInt(opponentGridSize){
-    return Math.floor(Math.random() * Math.floor(opponentGridSize));
-}
 
 //creates a multidimensional array
 function makeGrid(size){

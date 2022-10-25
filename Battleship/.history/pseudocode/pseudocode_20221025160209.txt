@@ -24,9 +24,7 @@ our ship character.
 Print the grid before placing the ship.
 Place the ship
 Print the grid after placing the ship.
-place ship in opponent grid at places where there is no ship already present.
-get the co-ordinates to place the ship randomly by using randomInt.
-
+place ship in opponent grid at places where there is no ship 
 Write code to place our ships
 Write code to place our enemy's ships
 Write code to attack the ships

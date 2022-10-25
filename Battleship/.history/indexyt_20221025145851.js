@@ -80,19 +80,9 @@ function placeShipInGrid(x,y,shipCharacter,gridArr){
 }
 
 function placeShipRandomlyInOpponentGrid(shipCharacter,opponentGrid,opponentGridSize ){
-    //Logic:
-    //The opponent must not place a ship at an index position where there is a ship
-    //already
-    let isShipPresentAtIndex = false;
-     while(!isShipPresentAtIndex){
-        let x = getRandomInt(opponentGridSize);
-        let y = getRandomInt(opponentGridSize);
-     }
+    
 }
 
-function getRandomInt(opponentGridSize){
-    return Math.floor(Math.random() * Math.floor(opponentGridSize));
-}
 
 //creates a multidimensional array
 function makeGrid(size){

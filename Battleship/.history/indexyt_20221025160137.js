@@ -90,9 +90,6 @@ function placeShipRandomlyInOpponentGrid(shipCharacter,opponentGrid,opponentGrid
      }
 }
 
-function getRandomInt(opponentGridSize){
-    return Math.floor(Math.random() * Math.floor(opponentGridSize));
-}
 
 //creates a multidimensional array
 function makeGrid(size){
