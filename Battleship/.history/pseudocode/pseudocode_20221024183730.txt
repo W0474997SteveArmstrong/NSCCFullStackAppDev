@@ -1,0 +1,7 @@
+Ask the user what size of Grid he/she wants for himself or herself and also for the 
+opponent.
+create a multidimensional array
+Initialize the outer grid
+Print header first
+Create Grid
+Print the Grid

@@ -1,0 +1,3 @@
+1. Print header first
+2.Create Grid
+Print the Grid

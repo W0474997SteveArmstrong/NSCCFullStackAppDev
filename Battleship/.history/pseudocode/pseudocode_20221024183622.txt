@@ -1,0 +1,4 @@
+Ask user what size of Grid he/she wants for he
+Print header first
+Create Grid
+Print the Grid

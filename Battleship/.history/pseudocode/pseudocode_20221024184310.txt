@@ -1,0 +1,16 @@
+Ask the user what size of Grid he/she wants for himself or herself and also for the 
+opponent.
+create a multidimensional array
+Initialize the outer grid
+create an empty grid at each index of the outer grid
+Now we have a grid having empty grids inside i.e. an array having empty arrays inside
+Loop in such a way that we have access to each item within the inner array.
+So we need to loop twice (for loop within for loop arr[i][j] = item)
+Initialize what value we want this item to have.
+In this way a grid for self and opponent will be created having items (cells 
+with ships and cells without ships).
+
+
+Print header first
+Create Grid
+Print the Grid

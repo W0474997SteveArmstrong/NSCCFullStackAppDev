@@ -1,0 +1,2 @@
+const RLS=
+let myGridsize = ""
