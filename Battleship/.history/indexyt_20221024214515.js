@@ -33,7 +33,7 @@ let opponentGrid =  makeGrid(opponentGridsize);
     printGrid(myGrid,false);
 
 /*After we create the grid and print it, we try to place the ship in each iteration.
-We ask the user for the ship's co-ordinates in each iteration.*/
+We ask the user for the ship's co-ordinates in each iteration.
 for (let index = 0; index < myGridsize; index++) {
   let x = null;
   while (null == x) {

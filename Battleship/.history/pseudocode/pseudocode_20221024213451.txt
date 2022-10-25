@@ -19,12 +19,7 @@ Print the Grid - only for us
 Initialize how many ships we have
 Initialize how many ships our opponent has
 Initialise what character we assign to our ship.
-Place our ship in the grid by extracting the item from 2D array and assigning it to
-our ship character.
-Print the grid before placing the ship.
-Place the ship
-Print the grid after placing the ship.
-
+Place our ship in the grid 
 Write code to place our ships
 Write code to place our enemy's ships
 Write code to attack the ships

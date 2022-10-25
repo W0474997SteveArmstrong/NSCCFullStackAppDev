@@ -32,8 +32,8 @@ let opponentGrid =  makeGrid(opponentGridsize);
     printGrid(opponentGrid,true);
     printGrid(myGrid,false);
 
-/*After we create the grid and print it, we try to place the ship in each iteration.
-We ask the user for the ship's co-ordinates in each iteration.*/
+//After we create the grid and print it, we try to place the ship in each iteration.
+//We ask the user for the ship's co-ordinates in each iteration.
 for (let index = 0; index < myGridsize; index++) {
   let x = null;
   while (null == x) {
@@ -59,8 +59,8 @@ for (let index = 0; index < myGridsize; index++) {
       );
     }
   }
-  /*After getting valid co-ordinates from the user, we place the ship based on those
-  co-ordinates in each iteration.*/
+  //After getting valid co-ordinates from the user, we place the ship based on those
+  //co-ordinates in each iteration.
   placeShipInGrid(x, y, "O", myGrid);
   //After placing the Ships, we print the Grid now to witness our changes
   printGrid(opponentGrid, true);
@@ -68,13 +68,13 @@ for (let index = 0; index < myGridsize; index++) {
 }
 //exit for loop
 
-/*To place the ship in the Grid, we just need to extract the item from the grid(array)
-and assign it to the shipCharacter.This method is called only after 
-gridArray is populated with all the necessary values so that we dont have to loop
-multiple times.*/
+//To place the ship in the Grid, we just need to extract the item from the grid(array)
+//and assign it to the shipCharacter.This method is called only after 
+//gridArray is populated with all the necessary values so that we dont have to loop
+//multiple times.
 function placeShipInGrid(x,y,shipCharacter,gridArr){
-    /*y-co-ordinate is the index of the outer grid.
-    x co-ordinate is the index of the inner grid.*/
+    //y-co-ordinate is the index of the outer grid.
+    //x co-ordinate is the index of the inner grid.
     gridArr[y][x] = shipCharacter;
 }
 
@@ -149,5 +149,4 @@ function printGrid(gridArr,isOpponent){
         console.log(myGrid);
     }
 }
-//printGrid() function exit
 
