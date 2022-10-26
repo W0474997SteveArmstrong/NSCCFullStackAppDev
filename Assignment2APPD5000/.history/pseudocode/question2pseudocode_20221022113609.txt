@@ -1,0 +1,7 @@
+//a) Display the heading
+//b) Add the space
+//c) displayMenu()
+//d)For displaying menu, read from choices_file line by line and store 
+// all the lines in a 2D array.
+//e) get user input and validate it.
+//f) display a different menu after validating it by using array[]

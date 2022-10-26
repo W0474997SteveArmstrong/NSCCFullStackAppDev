@@ -1,0 +1,42 @@
+/* CSS Reset*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+height: 59px;
+margin:3px 6px;
+}
+
+/* Navigation Bar:List Styling */
+
+/* The unordered list which was like a drop down, became a single line horizontally */
+/* Converts column style to row style */
+#navbar ul{
+    display: flex;
+}
+
+
+
+

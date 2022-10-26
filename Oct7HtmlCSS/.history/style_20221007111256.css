@@ -1,0 +1,21 @@
+
+#container{
+    background-color: yellow;
+    border: 1px solid orange;
+    height:300px;
+    width:400px;
+    display:flex;
+}
+#left{
+    background-color: red;
+    flex-basis:100px;
+    flex-grow:1
+
+}
+#right{
+background-color: blue;
+/* Use flex-basis instead of width.Its both same */
+flex-basis:100px;
+/* Fills the container since there is an extra space */
+flex-grow:1;
+}

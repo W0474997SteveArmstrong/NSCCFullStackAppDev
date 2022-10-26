@@ -1,0 +1,8 @@
+@echo off
+
+set /p folderName = Enter a new folder name
+
+md %folderName%
+
+ren %folderName %newfolderName
+

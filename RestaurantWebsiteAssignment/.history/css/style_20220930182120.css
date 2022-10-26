@@ -1,0 +1,64 @@
+/* CSS Reset*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+height: 59px;
+margin:3px 6px;
+}
+
+/* Navigation Bar:List Styling */
+
+/* The unordered list which was like a drop down, became a single line horizontally */
+/* Converts column style to row style */
+#navbar ul{
+    display: flex;
+}
+/* Now let's add colour to the list item inside the unordered list */
+
+
+#navbar ul li{
+    /* color: aqua; */
+    /* This removes the bullet point */
+    list-style: none;
+    /* background-color:  ; */
+    font-size: 1.3rem;
+}
+/* Let's add padding to the a tag since we may go for a hover effect so
+its better the individual element gets distinguished from the rest */
+#navbar ul li a{
+    /* By default, the display is inline. We are setting it to block since to give
+    padding, the display has to be block. */
+   display: block;
+   padding:3px 22px;
+   /* Need to find out why or what border-radius is */
+   border-radius: 20px;
+
+   /* This is used to remove the underline which is usually seen when we use links */
+   text-decoration: none;
+}
+
+
+

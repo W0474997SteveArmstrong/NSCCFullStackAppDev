@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "../WEBD5000Assignment"
+		},
+		{
+			"path": "../RestaurantWebsiteAssignment"
+		},
+		{
+			"path": "../Sept29"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../JavaScriptInfo"
+		},
+		{
+			"path": "../Oct3HtmlCSS"
+		},
+		{
+			"path": "../Oct4SoftwareDev"
+		},
+		{
+			"path": "../Oct5SoftwareDev"
+		},
+		{
+			"path": "../Oct5HtmlCSS"
+		},
+		{
+			"path": "../Oct5ImageMapHtmlAssignment"
+		},
+		{
+			"path": "../Oct6SoftDev"
+		},
+		{
+			"path": "../Oct6HtmlCSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oct5ImageMapHtmlAssignment"
+	}
+}

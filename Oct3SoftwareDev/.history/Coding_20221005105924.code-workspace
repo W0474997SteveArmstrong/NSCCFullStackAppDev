@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "../WEBD5000Assignment"
+		},
+		{
+			"path": "../RestaurantWebsiteAssignment"
+		},
+		{
+			"path": "../Sept29"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../JavaScriptInfo"
+		},
+		{
+			"path": "../Oct3HtmlCSS"
+		},
+		{
+			"path": "../Oct4SoftwareDev"
+		},
+		{
+			"path": "../Oct5SoftwareDev"
+		},
+		{
+			"path": "../Oct5HtmlCSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oct3HtmlCSS"
+	}
+}

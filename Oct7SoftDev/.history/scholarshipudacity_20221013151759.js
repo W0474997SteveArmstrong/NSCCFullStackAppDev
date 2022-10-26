@@ -1,0 +1,1 @@
+console.log(!("-66"===6) && "RAce"==="RAce");

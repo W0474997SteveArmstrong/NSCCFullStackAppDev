@@ -1,0 +1,4 @@
+//a) Display the heading
+//b) Add the space
+//c) displayMenu();
+//d) get user input and validate it.

@@ -1,0 +1,3 @@
+//a) Display the heading
+//b) Add the space
+//c) displayMenu();

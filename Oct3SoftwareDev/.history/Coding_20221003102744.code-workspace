@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../WEBD5000Assignment"
+		},
+		{
+			"path": "../RestaurantWebsiteAssignment"
+		},
+		{
+			"path": "../Sept29"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../JavaScriptInfo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaScriptInfo"
+	}
+}

@@ -1,0 +1,13 @@
+
+#container{
+    background-color: yellow;
+    border: 1px solid orange;
+    height:300px
+}
+#left{
+    background-color: red;
+}
+#right{
+
+background-color: blue;
+}

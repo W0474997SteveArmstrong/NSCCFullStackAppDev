@@ -1,0 +1,16 @@
+#first{
+    min-height: 100px;
+    }
+    #second{
+    min-height: 200px;
+    }
+    
+    div{
+        background-color: grey;
+        border: 1px solid red;
+        min-width: 20%;
+        /* Item width reduces and becomes relative to the container */
+    }
+    
+    
+    

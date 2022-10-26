@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"path": "../Sept29"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../JavaScriptInfo"
+		},
+		{
+			"path": "../Oct3HtmlCSS"
+		},
+		{
+			"path": "../Oct4SoftwareDev"
+		},
+		{
+			"path": "../Oct5SoftwareDev"
+		},
+		{
+			"path": "../Oct5HtmlCSS"
+		},
+		{
+			"path": "../Oct5ImageMapHtmlAssignment"
+		},
+		{
+			"path": "../Oct6SoftDev"
+		},
+		{
+			"path": "../Oct6HtmlCSS"
+		},
+		{
+			"path": "../Oct6SoftDevAssignmentFunction3Ways"
+		},
+		{
+			"path": "../Oct7SoftDev"
+		},
+		{
+			"path": "../Oct7HtmlCSS"
+		},
+		{
+			"path": "../Assignment2APPD5000"
+		},
+		{
+			"path": "../Oct11SoftDev"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oct5HtmlCSS"
+	}
+}
