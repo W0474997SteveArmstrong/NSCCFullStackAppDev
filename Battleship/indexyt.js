@@ -88,6 +88,11 @@ for (let index = 0; index < myGridsize; index++) {
 //b)place ships in each iteration based on the user supplied co-ordinates
 //c)print the new Grid which contains ships in each iteration
 
+//gameplay
+
+
+
+
 /*To place the ship in the Grid, we just need to extract the item from the grid(array)
 and assign it to the shipCharacter.This method is called only after 
 gridArray is populated with all the necessary values so that we dont have to loop

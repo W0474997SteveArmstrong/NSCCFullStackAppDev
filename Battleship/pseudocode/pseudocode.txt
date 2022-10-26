@@ -26,7 +26,10 @@ Place the ship
 Print the grid after placing the ship.
 place ship in opponent grid at places where there is no ship already present.
 get the co-ordinates to place the ship randomly by using randomInt.
-
+attack the ships.
+if we hit, mark as hit, if we miss, mark as splash
+dont attack the same place twice
+keep track of how many ships we attacked and how many we are yet to attack to win the game.
 
 
 
