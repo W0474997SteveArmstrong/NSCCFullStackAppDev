@@ -4,8 +4,7 @@
 
 console.log("Let's play Battleship!");
 let missileCounter=30;
-const NUMBER_OF_SHIPS=17;
-console.log("You have "+ missileCounter+ " missiles to fire to sink all "+NUMBER_OF_SHIPS+" ships.");
+console.log("You have "+ missileCounter+ " missiles to fire to sink all five ships.");
 console.log("");
 const RLS= require('readline-sync');
 const FS = require('fs');
@@ -14,6 +13,8 @@ const REGEX ="\r\n";
 const fileContentArr = fileContentStr.split(REGEX);
 let innerArrOfFileContentArr = [];
 const MAX_TURNS=30;
+const NUMBER_OF_SHIPS=17;
+
 
 
 for(let row of fileContentArr){
@@ -29,7 +30,7 @@ for(let row of fileContentArr){
 //For us to hit the ship, innerArrOfFileContentArr[0][3] == ;
 //we have to mark userInputArr with our indices.
 // console.log(fileContentArr);
-// console.log("innerArrOfFileContentArr",innerArrOfFileContentArr);
+console.log("innerArrOfFileContentArr",innerArrOfFileContentArr);
 
 //creates a multidimensional array
 function makeGrid(){
@@ -57,7 +58,7 @@ let userInputArr = makeGrid();
 
 //for self-testing
 // console.table(makeGrid());
-console.log("userInputArr after makeGrid() is: ",userInputArr);
+console.log("userInputArr is: ",userInputArr);
 
 
 
@@ -102,26 +103,23 @@ function printGrid(userInputArr){
     }
 //printGrid() function exit
 
+let usrInputArray = [];
 
-
-function gameplay(userInputArr){
+function gameplay(){
 for(let currentTurn=1;currentTurn<MAX_TURNS;currentTurn++){
     printGrid(userInputArr);
    let indicesArr = getUserInput();
-   console.log("indicesArr at the start of each iteration",indicesArr);
     let userInputArrInsideAttackShip = attackShip(indicesArr,userInputArr);
     console.log("userInputArr inside GamePlay",userInputArrInsideAttackShip);
     userInputArr=userInputArrInsideAttackShip;
     console.log("usrInputArr after assigning value of attackShip",userInputArr);
     console.log("CURRENT tURN IS: ",currentTurn);
     indicesArr=[];
-    console.log("indicesArr at end of each iteration",indicesArr);
 }
 }
-gameplay(userInputArr);
+gameplay();
 
 function getUserInput(){
-    let usrInputArray = [];
     const usrCoordinates = RLS.question("Choose your target (Ex A1):");
     let usrCoordinateArr = usrCoordinates.split("");
         console.log(usrCoordinateArr);
@@ -135,7 +133,7 @@ function getUserInput(){
         //   }
         //   console.log(usrInputDict);
         usrInputArray.push([usrCoordinateRowIndex,usrCoordinateColIndex]);
-        console.log("User Input Array inside getUserInput() is: ",usrInputArray);
+        console.log("User Input Array is: ",usrInputArray);
         //Whatever co-ordinate user is giving in that iteration, use it to the
         //original file content array and see if ship is there..if so hit..else miss
         return usrInputArray;
@@ -144,15 +142,10 @@ function getUserInput(){
 
 function attackShip(indicesArr,userInputArr){
     console.log("The ships value within attack ship:", innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]);
-    missileCounter--;
     if("1"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
         console.log("HIT!!!!!");
         userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "X";
-        console.log("You have "+ missileCounter +" missiles remaining");
-    }
-    else if("0"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
-        console.log("Miss");
-        userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "O";
+        missileCounter--;
         console.log("You have "+ missileCounter +" missiles remaining");
     }
     return userInputArr;
@@ -174,11 +167,11 @@ function attackShip(indicesArr,userInputArr){
 
 
 
-        // if("1"===fileContentArr[usrCoordinateColIndex][usrCoordinateRowIndex]){
-        //     console.log("HIT!!!!!");
-        //     missileCounter--;
-        //     console.log("You have "+ missileCounter +" missiles remaining");
-        // }
+        if("1"===fileContentArr[usrCoordinateColIndex][usrCoordinateRowIndex]){
+            console.log("HIT!!!!!");
+            missileCounter--;
+            console.log("You have "+ missileCounter +" missiles remaining");
+        }
 
 
 

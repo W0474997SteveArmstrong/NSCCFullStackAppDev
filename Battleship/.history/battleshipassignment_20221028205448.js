@@ -144,16 +144,15 @@ function getUserInput(){
 
 function attackShip(indicesArr,userInputArr){
     console.log("The ships value within attack ship:", innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]);
-    missileCounter--;
     if("1"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
         console.log("HIT!!!!!");
         userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "X";
+        missileCounter--;
         console.log("You have "+ missileCounter +" missiles remaining");
     }
     else if("0"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
         console.log("Miss");
-        userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "O";
-        console.log("You have "+ missileCounter +" missiles remaining");
+        console.log("You have "+  +" missiles remaining");
     }
     return userInputArr;
 }

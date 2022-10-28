@@ -4,8 +4,7 @@
 
 console.log("Let's play Battleship!");
 let missileCounter=30;
-const NUMBER_OF_SHIPS=17;
-console.log("You have "+ missileCounter+ " missiles to fire to sink all "+NUMBER_OF_SHIPS+" ships.");
+console.log("You have "+ missileCounter+ " missiles to fire to sink all five ships.");
 console.log("");
 const RLS= require('readline-sync');
 const FS = require('fs');
@@ -14,22 +13,8 @@ const REGEX ="\r\n";
 const fileContentArr = fileContentStr.split(REGEX);
 let innerArrOfFileContentArr = [];
 const MAX_TURNS=30;
+const NUMBER_OF_SHIPS=17;
 
-
-for(let row of fileContentArr){
-    //Rubric Item
-    //On application start, your code will read the contents of the provided ship 
-    //grid text file into a two-dimensional
-   //array in your program.
-
-    //Each row of the original array is split into a new Array.
-    innerArrOfFileContentArr.push(row.split(","));
-}
-//Challenge is to make the index of userArray and innerArrOfFileContentArr equal.
-//For us to hit the ship, innerArrOfFileContentArr[0][3] == ;
-//we have to mark userInputArr with our indices.
-// console.log(fileContentArr);
-// console.log("innerArrOfFileContentArr",innerArrOfFileContentArr);
 
 //creates a multidimensional array
 function makeGrid(){
@@ -45,7 +30,7 @@ function makeGrid(){
             Later on, after we finish placing our ships and attack,
             When we hit a ship, it marks the hit with the letter 'H'
             When we miss, it marks it as a splash with the letter 'S' */
-            userInputArr[rowIndex][colIndex]="~";
+            userInputArr[rowIndex][colIndex]=[];
         }
         //inner for loop exit
     }
@@ -57,21 +42,30 @@ let userInputArr = makeGrid();
 
 //for self-testing
 // console.table(makeGrid());
-console.log("userInputArr after makeGrid() is: ",userInputArr);
 
 
+for(let row of fileContentArr){
+    //Rubric Item
+    //On application start, your code will read the contents of the provided ship 
+    //grid text file into a two-dimensional
+   //array in your program.
+
+    //Each row of the original array is split into a new Array.
+    innerArrOfFileContentArr.push(row.split(","));
+}
 
 //Logging only for self-testing purpose. Followed rubric instruction that the
 //ship map will remain invisible during the gameplay.
 
-
+// console.log(fileContentArr);
+// console.log(innerArrOfFileContentArr);
 
 function makeHeaders(size){
     /*Adding space between the headers
     Adding the first space so that row index and col index won't clash.
     There are two kinds of space we use: 1)space between the row indices and the col header and 
     2) space between each col header.*/
-    const triplespacebtwnRowIndexAndColHeader ='  ';
+    const triplespacebtwnRowIndexAndColHeader ='   ';
     let result =triplespacebtwnRowIndexAndColHeader;
     const doublespacebtwnColHeaders='  ';
     for (let index = 0; index < size; index++) {
@@ -84,7 +78,6 @@ function makeHeaders(size){
 //for self-testing purpose
 // console.log(makeHeaders(fileContentArr.length));
 
-//CHALLENGE IS It is working only one time.
 
 /*We create a function which prints our Grid but doesn't print our opponent's Grid
 based on a boolean value called isOppponent*/
@@ -92,7 +85,7 @@ function printGrid(userInputArr){
     const header = makeHeaders(userInputArr.length);
     console.log(header);
     for (let rowIndex = 0; rowIndex < userInputArr.length; rowIndex++) {
-            const doubleSpaceBtwnRowIndexAndColValue =' ';
+            const doubleSpaceBtwnRowIndexAndColValue ='  ';
             let gridRow = rowIndex+1 + doubleSpaceBtwnRowIndexAndColValue;
             for (const eachCellInGrid of userInputArr[rowIndex]) {
                         gridRow+=eachCellInGrid+'  ';
@@ -101,61 +94,32 @@ function printGrid(userInputArr){
             }//for loop exit    
     }
 //printGrid() function exit
+let usrInputDict = {};
 
-
-
-function gameplay(userInputArr){
-for(let currentTurn=1;currentTurn<MAX_TURNS;currentTurn++){
+function gameplay(){
+for(let i=0;i<MAX_TURNS;i++){
     printGrid(userInputArr);
-   let indicesArr = getUserInput();
-   console.log("indicesArr at the start of each iteration",indicesArr);
-    let userInputArrInsideAttackShip = attackShip(indicesArr,userInputArr);
-    console.log("userInputArr inside GamePlay",userInputArrInsideAttackShip);
-    userInputArr=userInputArrInsideAttackShip;
-    console.log("usrInputArr after assigning value of attackShip",userInputArr);
-    console.log("CURRENT tURN IS: ",currentTurn);
-    indicesArr=[];
-    console.log("indicesArr at end of each iteration",indicesArr);
+    getUserInput(i);
+    console.log("CURRENT tURN IS: ",i);
 }
 }
-gameplay(userInputArr);
-
-function getUserInput(){
-    let usrInputArray = [];
+gameplay();
+function getUserInput(i){
     const usrCoordinates = RLS.question("Choose your target (Ex A1):");
     let usrCoordinateArr = usrCoordinates.split("");
         console.log(usrCoordinateArr);
+        console.log("Value of i inside getUserInput is: ",i);
         //Convert alphabet to number
         let usrCoordinateColIndex = usrCoordinateArr[0].charCodeAt(0)-65;
         //Since row is numbered from 1 but items are counted from index position,
         //we subtract with -1 to map correctly.
         let usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
+        let currentTurn =i;
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}
         //   }
         //   console.log(usrInputDict);
-        usrInputArray.push([usrCoordinateRowIndex,usrCoordinateColIndex]);
-        console.log("User Input Array inside getUserInput() is: ",usrInputArray);
-        //Whatever co-ordinate user is giving in that iteration, use it to the
-        //original file content array and see if ship is there..if so hit..else miss
-        return usrInputArray;
-}
 
-
-function attackShip(indicesArr,userInputArr){
-    console.log("The ships value within attack ship:", innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]);
-    missileCounter--;
-    if("1"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
-        console.log("HIT!!!!!");
-        userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "X";
-        console.log("You have "+ missileCounter +" missiles remaining");
-    }
-    else if("0"===innerArrOfFileContentArr[indicesArr[0][0]][indicesArr[0][1]]){
-        console.log("Miss");
-        userInputArr[indicesArr[0][0]][indicesArr[0][1]] = "O";
-        console.log("You have "+ missileCounter +" missiles remaining");
-    }
-    return userInputArr;
 }
 
         
@@ -174,11 +138,11 @@ function attackShip(indicesArr,userInputArr){
 
 
 
-        // if("1"===fileContentArr[usrCoordinateColIndex][usrCoordinateRowIndex]){
-        //     console.log("HIT!!!!!");
-        //     missileCounter--;
-        //     console.log("You have "+ missileCounter +" missiles remaining");
-        // }
+        if("1"===fileContentArr[usrCoordinateColIndex][usrCoordinateRowIndex]){
+            console.log("HIT!!!!!");
+            missileCounter--;
+            console.log("You have "+ missileCounter +" missiles remaining");
+        }
 
 
 
