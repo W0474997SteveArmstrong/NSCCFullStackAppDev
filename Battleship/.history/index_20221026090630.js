@@ -3,7 +3,7 @@ const RLS = require("readline-sync");
 const MAX_TURNS = 3;
 const TOTAL_SHIP_SEGMENTS=2;
 let numHits = 0;
-
+# hi there
 //read data into array of arrays
 //this will represent the battleGrid
 const gridText = FS.readFileSync("map.txt", "utf-8");
