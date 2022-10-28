@@ -117,7 +117,7 @@ function printGrid(userInputArr){
 
 
 
-        //Statements to be printed in the event of a win or loss.
+        //Ste
 
         // console.log("HIT!!!!!");
         // console.log("YOU SANK MY ENTIRE FLEET!");

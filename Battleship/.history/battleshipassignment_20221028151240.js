@@ -116,21 +116,6 @@ function printGrid(userInputArr){
         let usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
 
 
-
-        //Statements to be printed in the event of a win or loss.
-
-        // console.log("HIT!!!!!");
-        // console.log("YOU SANK MY ENTIRE FLEET!");
-        // console.log("YOU HAD 17 of 17 hits,which sank all the ships");
-        // console.log("You won congratulations!");
-        // console.log("Miss");
-        // console.log("You have "+ 0 +" missiles remaining");
-        // console.log("GAME OVER.");
-        // console.log("You had "+ missileCounter+" of "+NUMBER_OF_SHIPS+" hits, but didn't sink all the ships.");
-        // console.log("Better luck next time.");
-
-
-
    
 
 

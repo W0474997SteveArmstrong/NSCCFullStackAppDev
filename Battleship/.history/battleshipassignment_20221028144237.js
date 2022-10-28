@@ -95,43 +95,11 @@ function printGrid(userInputArr){
 //printGrid() function exit
     printGrid(makeGrid());
 
+    while (currentTurn <= MAX_TURNS) {
         const usrCoordinates = RLS.question("Choose your target (Ex A1):");
         //After choosing the target, we must attack the target.
-        //if you hit it then---> "HIT!!!!!";
-        //if you miss it then--->"Miss";
-        //How do u identify ur input as an array location?
-        //If u identify your input to an array location, then u can map it
-        //to whatever u want.
-        //How do u compare if u hit a ship or u splashed some water?
-        //Convert letter back to number.
-        //We will worry about doing it once first.
-        //Later on we can do it for n number of times.
-
-        let usrCoordinateArr = usrCoordinates.split("");
-        console.log(usrCoordinateArr);
-        //Convert alphabet to number
-        let usrCoordinateColIndex = usrCoordinateArr[0].charCodeAt(0)-65;
-        //Since row is numbered from 1 but items are counted from index position,
-        //we subtract with -1 to map correctly.
-        let usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
-
-
-
-        //Statements to be printed in the event of a win or loss.
-
-        // console.log("HIT!!!!!");
-        // console.log("YOU SANK MY ENTIRE FLEET!");
-        // console.log("YOU HAD 17 of 17 hits,which sank all the ships");
-        // console.log("You won congratulations!");
-        // console.log("Miss");
-        // console.log("You have "+ 0 +" missiles remaining");
-        // console.log("GAME OVER.");
-        // console.log("You had "+ missileCounter+" of "+NUMBER_OF_SHIPS+" hits, but didn't sink all the ships.");
-        // console.log("Better luck next time.");
-
-
-
-   
+        //if you hit it then---> "HIT!!!!!"
+    }
 
 
 
