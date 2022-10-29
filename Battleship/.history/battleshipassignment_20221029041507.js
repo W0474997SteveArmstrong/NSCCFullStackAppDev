@@ -1,6 +1,6 @@
 console.log("Let's play Battleship!");
 let missileCounter = 30;
-const NUMBER_OF_SHIPS = 17;
+const NUMBER_OF_SHIPS = 3;
 console.log(
   "You have " +
     missileCounter +
@@ -15,7 +15,7 @@ const fileContentStr = FS.readFileSync("map.txt", "utf-8");
 const REGEX = "\r\n";
 const fileContentArr = fileContentStr.split(REGEX);
 let innerArrOfFileContentArr = [];
-const MAX_TURNS = 30;
+const MAX_TURNS = 1;
 
 for (let row of fileContentArr) {
   //Rubric Item

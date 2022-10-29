@@ -1,6 +1,6 @@
 console.log("Let's play Battleship!");
-let missileCounter = 30;
-const NUMBER_OF_SHIPS = 17;
+let missileCounter = 10;
+const NUMBER_OF_SHIPS = 3;
 console.log(
   "You have " +
     missileCounter +

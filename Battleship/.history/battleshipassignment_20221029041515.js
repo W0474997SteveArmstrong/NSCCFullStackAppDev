@@ -15,7 +15,7 @@ const fileContentStr = FS.readFileSync("map.txt", "utf-8");
 const REGEX = "\r\n";
 const fileContentArr = fileContentStr.split(REGEX);
 let innerArrOfFileContentArr = [];
-const MAX_TURNS = 30;
+const MAX_TURNS = 17;
 
 for (let row of fileContentArr) {
   //Rubric Item
