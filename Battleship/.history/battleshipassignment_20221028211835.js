@@ -2,7 +2,6 @@
 //There are 10 rows and 10 columns. (10x10 grid)
 //Grid we show the user must also be 10x10
 
-
 console.log("Let's play Battleship!");
 let missileCounter=30;
 const NUMBER_OF_SHIPS=17;
@@ -129,7 +128,7 @@ function getUserInput(){
         let usrCoordinateColIndex=null;
         let usrCoordinateRowIndex=null;
         //Convert alphabet to number
-        console.log("Length of usrCoordinateArr is:",usrCoordinateArr.length);
+        console.log("Length of usrCoordinateArr is:");
         if(2== usrCoordinateArr.length){
          usrCoordinateColIndex = usrCoordinateArr[0].charCodeAt(0)-65;
         //Since row is numbered from 1 but items are counted from index position,
@@ -137,9 +136,7 @@ function getUserInput(){
         usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
         }
         else{
-            // usrCoordinateArr=[];
-            // usrCoordinateArr=usrCoordinates.split(usrCoordinates.charAt(0));
-            // console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
+
         }
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}

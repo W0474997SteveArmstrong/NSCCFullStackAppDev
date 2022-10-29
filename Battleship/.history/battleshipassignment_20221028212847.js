@@ -2,7 +2,8 @@
 //There are 10 rows and 10 columns. (10x10 grid)
 //Grid we show the user must also be 10x10
 
-
+const re = require('re');
+re.
 console.log("Let's play Battleship!");
 let missileCounter=30;
 const NUMBER_OF_SHIPS=17;
@@ -137,9 +138,9 @@ function getUserInput(){
         usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
         }
         else{
-            // usrCoordinateArr=[];
-            // usrCoordinateArr=usrCoordinates.split(usrCoordinates.charAt(0));
-            // console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
+            usrCoordinateArr=[];
+            usrCoordinateArr=usrCoordinates.split(/[A-Z]+/g);
+            console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
         }
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}

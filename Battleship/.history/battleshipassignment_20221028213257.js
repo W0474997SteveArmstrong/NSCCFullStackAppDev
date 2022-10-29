@@ -137,9 +137,9 @@ function getUserInput(){
         usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
         }
         else{
-            // usrCoordinateArr=[];
-            // usrCoordinateArr=usrCoordinates.split(usrCoordinates.charAt(0));
-            // console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
+            usrCoordinateArr=[];
+            usrCoordinateArr=usrCoordinates.split(userInputArr);
+            console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
         }
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}

@@ -124,7 +124,7 @@ gameplay(userInputArr);
 function getUserInput(){
     let usrInputArray = [];
     const usrCoordinates = RLS.question("Choose your target (Ex A1):");
-    let usrCoordinateArr = usrCoordinates.split("");
+    let usrCoordinateArr = usrCoordinates.split('(\d+)');
         console.log(usrCoordinateArr);
         let usrCoordinateColIndex=null;
         let usrCoordinateRowIndex=null;
@@ -137,9 +137,9 @@ function getUserInput(){
         usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
         }
         else{
-            // usrCoordinateArr=[];
-            // usrCoordinateArr=usrCoordinates.split(usrCoordinates.charAt(0));
-            // console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
+            usrCoordinateArr=[];
+            usrCoordinateArr=usrCoordinates.split(/[A-Z]+/g);
+            console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
         }
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}

@@ -2,7 +2,6 @@
 //There are 10 rows and 10 columns. (10x10 grid)
 //Grid we show the user must also be 10x10
 
-
 console.log("Let's play Battleship!");
 let missileCounter=30;
 const NUMBER_OF_SHIPS=17;
@@ -126,20 +125,13 @@ function getUserInput(){
     const usrCoordinates = RLS.question("Choose your target (Ex A1):");
     let usrCoordinateArr = usrCoordinates.split("");
         console.log(usrCoordinateArr);
-        let usrCoordinateColIndex=null;
-        let usrCoordinateRowIndex=null;
+        let 
         //Convert alphabet to number
-        console.log("Length of usrCoordinateArr is:",usrCoordinateArr.length);
-        if(2== usrCoordinateArr.length){
-         usrCoordinateColIndex = usrCoordinateArr[0].charCodeAt(0)-65;
+        if(innerArrOfFileContentArr== usrCoordinateArr.length){
+        let usrCoordinateColIndex = usrCoordinateArr[0].charCodeAt(0)-65;
         //Since row is numbered from 1 but items are counted from index position,
         //we subtract with -1 to map correctly.
-        usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
-        }
-        else{
-            // usrCoordinateArr=[];
-            // usrCoordinateArr=usrCoordinates.split(usrCoordinates.charAt(0));
-            // console.log("usrCoordinateArr when length is 3 is: ",usrCoordinateArr);
+        let usrCoordinateRowIndex = parseInt(usrCoordinateArr[1])-1;
         }
         // usrInputDict = {
         //     currentTurn:{usrCoordinateColIndex,usrCoordinateRowIndex}
