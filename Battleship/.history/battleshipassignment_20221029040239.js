@@ -41,7 +41,7 @@ function makeGrid(){
             Later on, after we finish placing our ships and attack,
             When we hit a ship, it marks the hit with the letter 'X'
             When we miss, it marks it as a splash with the letter 'O' */
-            userInputArr[rowIndex][colIndex]='~';
+            userInputArr[rowIndex][colIndex]='';
         }
         //inner for loop exit
     }
@@ -75,9 +75,9 @@ function printGrid(userInputArr){
     for (let rowIndex = 0; rowIndex < userInputArr.length; rowIndex++) {
             const singleSpaceBtwnRowIndexAndColValue =' ';
                
-            let gridRow = rowIndex+1 + singleSpaceBtwnRowIndexAndColValue;
+            let gridRow = rowIndex + singleSpaceBtwnRowIndexAndColValue;
             for (const eachCellInGrid of userInputArr[rowIndex]) {
-                        gridRow+=eachCellInGrid+'  ';
+                        gridRow+=eachCellInGrid+' ';
                 }//inner for loop exit
                 console.log(gridRow);
             }//for loop exit    

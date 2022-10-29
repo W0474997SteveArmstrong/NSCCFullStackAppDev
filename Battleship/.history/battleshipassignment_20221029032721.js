@@ -1,6 +1,6 @@
 
 console.log("Let's play Battleship!");
-let missileCounter=10;
+let missileCounter=3;
 const NUMBER_OF_SHIPS=3;
 console.log("You have "+ missileCounter+ " missiles to fire to sink all "+NUMBER_OF_SHIPS+" ships.");
 console.log("");
@@ -10,7 +10,7 @@ const fileContentStr = FS.readFileSync("map.txt","utf-8");
 const REGEX ="\r\n";
 const fileContentArr = fileContentStr.split(REGEX);
 let innerArrOfFileContentArr = [];
-const MAX_TURNS=10;
+const MAX_TURNS=3;
 
 
 for(let row of fileContentArr){
@@ -25,7 +25,7 @@ for(let row of fileContentArr){
 
 //Logging only for self-testing purpose. Followed rubric instruction that the
 //ship map will remain invisible during the gameplay.
-console.log("innerArrOfFileContentArr",innerArrOfFileContentArr);
+// console.log("innerArrOfFileContentArr",innerArrOfFileContentArr);
 
 //creates a multidimensional array
 function makeGrid(){
@@ -41,7 +41,7 @@ function makeGrid(){
             Later on, after we finish placing our ships and attack,
             When we hit a ship, it marks the hit with the letter 'X'
             When we miss, it marks it as a splash with the letter 'O' */
-            userInputArr[rowIndex][colIndex]='~';
+            userInputArr[rowIndex][colIndex]=[];
         }
         //inner for loop exit
     }
@@ -56,13 +56,13 @@ function makeHeaders(size){
     Adding the first space so that row index and col index won't clash.
     There are two kinds of space we use: 1)space between the row indices and the col header and 
     2) space between each col header.*/
-    const fourspacebtwnRowIndexAndColHeader ='  ';
-    let result =fourspacebtwnRowIndexAndColHeader;
-    const fourspacebtwnColHeaders='  ';
+    const doublespacebtwnRowIndexAndColHeader ='  ';
+    let result =doublespacebtwnRowIndexAndColHeader;
+    const doublespacebtwnColHeaders='  ';
     for (let index = 0; index < size; index++) {
         //converting 0,1,2,3... to its corresponding capitalized alphabet.
         let alphabet=String.fromCharCode(65 + index);
-        result+=alphabet+fourspacebtwnColHeaders;
+        result+=alphabet+doublespacebtwnColHeaders;
         
     }
     return result; //  A  B  C  D  E  F  G  H  I  J
@@ -73,9 +73,9 @@ function printGrid(userInputArr){
     const header = makeHeaders(userInputArr.length);
     console.log(header);
     for (let rowIndex = 0; rowIndex < userInputArr.length; rowIndex++) {
-            const singleSpaceBtwnRowIndexAndColValue =' ';
-               
-            let gridRow = rowIndex+1 + singleSpaceBtwnRowIndexAndColValue;
+            const fourSpaceBtwnRowIndexAndColValue ='    ';
+            1      
+            let gridRow = rowIndex+1 + fourSpaceBtwnRowIndexAndColValue;
             for (const eachCellInGrid of userInputArr[rowIndex]) {
                         gridRow+=eachCellInGrid+'  ';
                 }//inner for loop exit

@@ -41,7 +41,7 @@ function makeGrid(){
             Later on, after we finish placing our ships and attack,
             When we hit a ship, it marks the hit with the letter 'X'
             When we miss, it marks it as a splash with the letter 'O' */
-            userInputArr[rowIndex][colIndex]='~';
+            userInputArr[rowIndex][colIndex]='';
         }
         //inner for loop exit
     }
@@ -56,13 +56,13 @@ function makeHeaders(size){
     Adding the first space so that row index and col index won't clash.
     There are two kinds of space we use: 1)space between the row indices and the col header and 
     2) space between each col header.*/
-    const fourspacebtwnRowIndexAndColHeader ='  ';
-    let result =fourspacebtwnRowIndexAndColHeader;
-    const fourspacebtwnColHeaders='  ';
+    const doublespacebtwnRowIndexAndColHeader ='  ';
+    let result =doublespacebtwnRowIndexAndColHeader;
+    const singlespacebtwnColHeaders=' ';
     for (let index = 0; index < size; index++) {
         //converting 0,1,2,3... to its corresponding capitalized alphabet.
         let alphabet=String.fromCharCode(65 + index);
-        result+=alphabet+fourspacebtwnColHeaders;
+        result+=alphabet+singlespacebtwnColHeaders;
         
     }
     return result; //  A  B  C  D  E  F  G  H  I  J
@@ -77,7 +77,7 @@ function printGrid(userInputArr){
                
             let gridRow = rowIndex+1 + singleSpaceBtwnRowIndexAndColValue;
             for (const eachCellInGrid of userInputArr[rowIndex]) {
-                        gridRow+=eachCellInGrid+'  ';
+                        gridRow+=eachCellInGrid+' ';
                 }//inner for loop exit
                 console.log(gridRow);
             }//for loop exit    

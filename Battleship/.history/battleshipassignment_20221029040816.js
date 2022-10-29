@@ -41,7 +41,7 @@ function makeGrid(){
             Later on, after we finish placing our ships and attack,
             When we hit a ship, it marks the hit with the letter 'X'
             When we miss, it marks it as a splash with the letter 'O' */
-            userInputArr[rowIndex][colIndex]='~';
+            userInputArr[rowIndex][colIndex]='';
         }
         //inner for loop exit
     }
@@ -82,7 +82,7 @@ function printGrid(userInputArr){
                 console.log(gridRow);
             }//for loop exit    
     }
-//printGrid() function exit
+//printGrid() function exitD
 function gameplay(userInputArr){
     let numHits=0;
     let hitsCountMap = new Map();
