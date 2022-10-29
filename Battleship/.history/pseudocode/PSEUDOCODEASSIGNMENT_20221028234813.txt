@@ -1,0 +1,19 @@
+//There are 10 rows and 10 columns. (10x10 grid)
+//Grid we show the user must also be 10x10
+//Each row of the original array is split into a new Array.
+/*At every index of the outer grid, an empty grid is created unitl 
+        index=size-1 of the grid.*/
+        /*Our grids are square grids. like 3x3 , 9x9, 4x4 etc.
+            Every position in our grid starts off as a empty []
+            Later on, after we finish placing our ships and attack,
+            When we hit a ship, it marks the hit with the letter 'X'
+            When we miss, it marks it as a splash with the letter 'O' */
+            rubric instruction that the
+//ship map will remain invisible during the gameplay.
+ /*Adding space between the headers
+    Adding the first space so that row index and col index won't clash.
+    There are two kinds of space we use: 1)space between the row indices and the col header and 
+    2) space between each col header.*/
+    //converting 0,1,2,3... to its corresponding capitalized alphabet.
+    //challenges--->don't hit the same place twice.
+    //Convert alphabet to number
