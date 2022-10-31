@@ -1,0 +1,302 @@
+/* Colors */
+/* All the colours used in this Resume Assignment are found below at a single place
+which makes things super convenient, reusable without duplication and clean. */
+
+:root{
+     --primary : #1a253f;
+     --dark : #151A33;
+     --secondary : #2b55cc;
+     --info : #4d79f6;
+     --ternary : #848db3;
+     --pure : #eff2f9;
+     --fade : #7081b9;
+     --mild : #8997bd;
+     --footer : #212A4A;
+     --black : #060b1b;
+     --linkedin : #4ac7ec;
+     --success : #1ecab8;
+     --danger : #f1646c;
+     --dark-blue : #28365f;
+     --silver : silver;
+     --body:#000000;
+     --navbar:#001f3f;
+     --resumename:#66FCF1;
+}
+
+/* Reset */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* We can access the colour from root by using var keyword. I tried with let and
+    const instead and it didn't work. I guess this is a place where we have got to 
+    use var. */
+    background: var(--body);
+    /* As suggested by the name, it helps with smoothening out our fonts. */
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Styling our headings */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1;
+}
+
+#fullName{
+    font-size:30px;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-timing-function: calc();
+  animation: textclip 1.3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100%;
+  }
+}
+#jobTitle{
+    font-size: 20px;
+}
+
+.container{
+    max-width: 1140px ;
+    /* Top and bottom is 0. Right and Left is auto */
+    margin: 0 auto;
+}
+#ResumeName{
+    color: var(--resumename);
+}
+
+nav{
+    background: var(--navbar);
+    padding: 1.6rem 0 ;
+}
+
+/* Applying the flex box concepts we learnt in class to our navbar */
+nav .inner{
+    /* Activates our flex box */
+    display: flex;
+    align-items: center;
+    /* Equal space between items in flexbox */
+    justify-content: space-between;
+}
+
+nav .inner .logo{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: flex;
+}
+#linkedin{
+    width: 40px;
+    margin-right: 10px;
+}
+/* To change the colour of the logo */
+nav .inner .logo i {
+    color: var(--info);
+}
+
+nav .inner button{
+    background:var(--secondary);
+    border: none;
+    /* 0.6rem top and bottom 1 rem left and right */
+    padding: 0.6rem 1rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+section.profile{
+     background: var(--black); 
+     /* background: #10EE67; */
+     /* We use flex here so that we can keep our name and JobTitle details in the left
+     and our contact details in the right. When we want to layout specific items,
+     it's great practice to use flex. */
+     display: flex;
+     align-items: center;
+     padding: 3rem;
+     /* we are giving a margin top between our resume and our nav bar */
+     margin-top:60px;
+     /* CSS property which helps us achieve the polygon shape of the header of our
+     resume. It is made by assigning 5 points. 4 at the corners and one towards
+     the middle of the resume. Points are positioned as x y co-ordinates which
+     are space seperated. The different polygon points are comma separated.
+     Here in the case of second polygon point,x travels 100% horizontally 
+     and y travels 0% vertically meaning it doesn'tmove. */
+
+     clip-path:polygon(0 0,100% 0,100% 80%,25% 100%,0 80%);
+     padding-bottom: 4rem;
+
+}
+
+/* Using flex to layout the items within the name and JobTile flex.
+i.e. this is the flex within the flex */
+section.profile .left{
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+section.profile .right{
+    flex: 1;
+}
+section.profile .left h2{
+    color: var(--fade);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Styling the paragraph which encloses our job title */
+section.profile .left p{
+    color: var(--mild);
+    font-size: 14px;
+}
+
+section.profile .left img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.profile .left .avatar__block{
+    position: relative;
+    /* Giving space between the image and the text */
+    margin-right: 2rem ;
+}
+
+section.profile .left .avatar__block span{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background:var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    /* To center the icons within the span */
+    align-items: center;
+    justify-content: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0px rgba(32,41,54,0.05);
+    cursor: pointer;
+}
+
+section.profile .right ul.contact{
+    /* removes bullet points */
+     list-style-type: none;
+     margin-bottom: 1.6rem;
+
+}
+
+section.profile .right ul.contact li{
+    color: var(--ternary);
+    margin-bottom: .7rem;
+    font-size: 14px;
+
+}
+
+section.profile .right ul.contact li i{
+    font-size: 18px;
+    margin-right: 0.3rem;
+}
+
+section.profile .right ul.socials{
+    /* The icons and text were in vertical fashion before.
+    Use of flex keeps them side by side */
+    display: flex;
+    align-items: center;
+}
+/* Styling the linkedin url */
+section.profile .right ul.socials li a{
+    /* Anchor tags by default are inline items and it is not possible to 
+    style inline items..by giving it height and width so we change it to
+    inline-block */
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--pure);
+}
+
+section{
+    padding: 3rem;
+}
+main{
+    background: var(--primary);
+}
+
+.section__heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pure);
+    margin-bottom: 3rem;
+    text-shadow: 0 0 1px rgba(40,54,95,0.1);
+    position: relative;
+}
+
+.section__heading:after{
+    content: '';
+    height: 3px;
+    width: 80px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1px dotted var(--danger);
+}
+
+section.about .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Space between our left and right divs */
+    grid-gap:16rem;
+}
+
+section.about .content p{
+    color: var(--ternary);
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    margin-bottom: 1rem;
+
+}
+
+section.about .content .left button{
+    background: rgba(77, 121, 246, 0.1);
+    color: var(--info);
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+}
+
+section.about .content .right p{
+    line-height:1.6;
+    
+}
+
+

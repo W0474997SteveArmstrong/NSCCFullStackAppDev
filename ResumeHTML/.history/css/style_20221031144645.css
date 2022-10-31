@@ -1,0 +1,108 @@
+/* Colors */
+/* All the colours used in this Resume Assignment are found below at a single place
+which makes things super convenient, reusable without duplication and clean. */
+
+:root{
+     --primary : #1a253f;
+     --dark : #151A33;
+     --secondary :#2b55cc;
+     --info:#4d79f6;
+     --ternary : #848db3;
+     --pure : #eff2f9;
+     --fade : #7081b9;
+     --mild : #8997bd;
+     --footer : #212A4A;
+     --black :#060b1b;
+     --twitter : #4ac7ec;
+     --dribbble : #ff5da0;
+     --success : #1ecab8;
+     --danger : #f1646c;
+     --dark-blue : #28365f;
+}
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* We can access the colour from root by using var keyword. I tried with let and
+    const instead and it didn't work. I guess this is a place where we have got to 
+    use var. */
+    background: var(--dark);
+    /* As suggested by the name, it helps with smoothening out our fonts. */
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Styling our headings */
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 1;
+}
+
+.container{
+    max-width: 1140px ;
+    /* Top and bottom is 0. Right and Left is auto */
+    margin: 0 auto;
+}
+
+nav{
+    background:var(--primary);
+    padding: 1.6rem 0 ;
+}
+
+/* Applying the flex box concepts we learnt in class to our navbar */
+nav .inner{
+    /* Activates our flex box */
+    display: flex;
+    align-items: center;
+    /* Equal space between items in flexbox */
+    justify-content: space-between;
+}
+
+nav .inner .logo{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+nav .inner .logo i{
+    color: var(--info);
+}
+
+nav .inner button{
+    background:var(--secondary);
+    border: none;
+    /* 0.6rem top and bottom 1 rem left and right */
+    padding: 0.6rem 1rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+section.profile{
+     background: var(--black); 
+     /* We use flex here so that we can keep our name and JobTitle details in the left
+     and our contact details in the right. When we want to layout specific items,
+     it's great practice to use flex. */
+     display: flex;
+     align-items: center;
+     padding: 3rem;
+     /* we are giving a margin top between our resume and our nav bar */
+     margin-top:60px;
+}
+
+/* Using flex to layout the items within the name and JobTile flex.
+i.e. this is the flex within the flex */
+section.profile .left{
+    display: flex;
+    flex: 2;
+    align-items: center;
+
+}
