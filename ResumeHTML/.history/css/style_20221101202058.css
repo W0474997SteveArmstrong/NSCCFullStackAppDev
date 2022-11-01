@@ -460,7 +460,7 @@ section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_db .to
     text-transform: uppercase;
 }
 .link-mail{
-    color: var(--fade);
+    background: var();
 }
 
 
