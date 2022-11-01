@@ -1,0 +1,388 @@
+:root {
+    --primary-color: #F59E0B;
+    --off-white: #F3F4F6;
+    --dark-gray: #6B7280;
+    --navbar: #001f3f;
+    --portfolioname: #66FCF1;
+    --black: black;
+    --codes:yellow;
+
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* .a { color: #FF0000; } 
+.a:hover { color: #00FF00; }  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    margin: 2rem 0rem
+}
+
+/* spaces */
+.pad-sm {
+    padding: 0.5rem 0rem;
+}
+
+/* container  */
+.container {
+    padding: 0.5rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.container-blog {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* links */
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.4rem 1rem 0rem;
+    display: inline-block;
+}
+
+
+/* lists */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+/* navigation */
+
+.navigation {
+    background-color: var(--navbar);
+    color: var(--portfolioname);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+   
+}
+
+.navigation .link {
+    color: white;
+    display: inline;
+}
+
+.navigation .link:hover{
+    background:black;
+  color: gold;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/* Skills CSS Start */
+section.skills .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+section.skills .content .left{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+section.skills .content .left .heading{
+    margin-bottom: 2rem;
+}
+section.skills .content .left .heading i{
+    color: var(--fade);
+    font-size: 52px;
+
+}
+
+section.skills .content .left .heading h5{
+    font-size: 16px;
+    margin-top: 0.5rem;
+    color: var(--mild);
+
+}
+
+section.skills .content .left p{
+    font-size: 14px;
+    color: var(--ternary);
+    line-height: 1.7;
+}
+
+section.skills .content .left p.center{
+    color: var(--fade);
+}
+
+section.skills .content .left .item{
+    margin-bottom: 2.6rem;
+    margin-left: 15px;
+    position: relative;
+}
+
+section.skills .content .left .timeline__wrapper{
+    border-left: 2px dotted var(--dark-blue);
+}
+
+section.skills .content .left .item:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--info);
+    border-radius: 50%;
+    /* When we give negative value, it offsets the margin. */
+    margin-left: -21px;
+}
+
+section.skills .skills__wrapper .skill_box h4{
+    color: var(--ternary);
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-left: 65px;
+}
+
+section.skills .skills__wrapper .skill_box{
+    margin-bottom: 4rem;
+}
+
+section.skills .skills__wrapper .skill_box .progress__wrap{
+    background: var(--progresswrapper);
+    height: 6px;
+    width: 89%;
+    border: 2px solid;
+    box-shadow: 0px 0px 1px 0.25px #4d7964;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    margin-left: 65px;
+}
+/* Below sections look same but their width is different */
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_html{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 63%;
+    position: relative; 
+}
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_javascript{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 70%;
+    position: relative; 
+}
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_java{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 70%;
+    position: relative; 
+}
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_sql{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 85%;
+    position: relative; 
+}
+
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_spring{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 57%;
+    position: relative; 
+}
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_os{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 52%;
+    position: relative; 
+}
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_db{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 90%;
+    position: relative; 
+}
+
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_html .tooltip
+,section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_javascript .tooltip,
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_spring .tooltip,
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_os .tooltip,
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_java .tooltip,
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_sql .tooltip,
+section.skills .skills__wrapper .skill_box .progress__wrap .progress__bar_db .tooltip{
+    position: absolute;
+    right:-15px;
+    top: -30px;
+    margin-bottom: 10px;
+    color: var(--ternary);
+    font-size: 56%;
+    text-transform: uppercase;
+}
+
+/* Skills CSS End */
+
+
+/* header */
+
+.hero {
+    padding-top: 4rem;
+    margin-top: 60px;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.hero .hero-heading {
+    color: var(--dark-gray);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+#fullName {
+    font-size: 30px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-timing-function: calc();
+    animation: textclip 1.6s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 100%;
+    }
+}
+
+/* Change to goal later */
+.hero-blog {
+    padding: 2.5rem 0rem;
+}
+
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow,
+.clr {
+    background: #9CECFB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-center {
+    text-align: center;
+}
+
+
+/** footer **/
+
+.footer {
+    background-color: var(--navbar);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+#linkedin {
+    width: 40px;
+    /* margin-right: 10px; */
+}
+
+.footer .link {
+    color: white;
+    display: inline;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+@media screen and (max-width:500px) {
+    nav .link {
+        padding: 0;
+    }
+}
+
+.timeline__wrapper{
+    text-align: center;
+    list-style-position: inside;
+}
