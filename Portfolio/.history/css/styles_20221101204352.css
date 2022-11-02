@@ -19,6 +19,9 @@ body {
 }
 
 
+/* .a { color: #FF0000; } 
+.a:hover { color: #00FF00; }  */
+
 html {
     scroll-behavior: smooth;
 }

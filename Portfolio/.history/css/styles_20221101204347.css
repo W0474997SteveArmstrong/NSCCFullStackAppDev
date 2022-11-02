@@ -8,6 +8,7 @@
     --portfolioname: #66FCF1;
     --black: black;
     --codes:yellow;
+
 }
 
 body {
@@ -18,6 +19,9 @@ body {
     background: linear-gradient(to right, #1CB5E0, #000046);
 }
 
+
+/* .a { color: #FF0000; } 
+.a:hover { color: #00FF00; }  */
 
 html {
     scroll-behavior: smooth;
