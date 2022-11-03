@@ -1,0 +1,97 @@
+
+
+1.
+select *
+from Track;
+
+2.
+select Name,Composer
+from Track;
+
+3.
+select *
+from Employee;
+
+4.
+select FirstName,LastName
+from Employee;
+
+5.
+select Address,City,State
+from Employee;
+
+6.
+select Email
+from Employee;
+
+7.
+select *
+from Customer;
+
+8.
+select city
+from Customer ORDER BY City;
+
+9.
+select country
+from Customer order by country desc;
+
+10.
+select DISTINCT country
+from Customer order by country desc;
+
+11.
+select DISTINCT Name
+from Playlist;
+
+12.
+select *
+from Invoice;
+
+13.
+select BillingCity,BillingCountry
+from Invoice;
+
+14.
+select distinct BillingCity,BillingCountry
+from Invoice order by BillingCountry,BillingCity;
+
+WHERE
+
+1. 
+select *
+from Track where Composer='AC/DC';
+
+2.
+select Name
+from Track where Composer='Frank Zappa';
+
+3.
+select Bytes
+from Track where UnitPrice>0.99;
+
+4.
+
+select Track.Name
+from Track inner join MediaType MT on MT.MediaTypeId = Track.MediaTypeId where UnitPrice!=1.99 and MT.Name='Protected MPEG-4 video file';
+
+5.
+select FirstName
+from Customer where country='Canada' and LastName='Silk';
+
+6.
+select FirstName,LastName,Email
+from Customer where City='Prague' order by LastName;
+
+7.
+select Customer.FirstName,Customer.LastName
+from Customer inner join Employee E on E.EmployeeId = Customer.SupportRepId where Customer.Country ='USA' and Customer.City != ('California,Florida') and E.FirstName='Steve' and E.LastName='Johnson';
+
+8.
+select *
+from Employee where BirthDate >'1969-12-31 23:59:59';
+
+9.
+select FirstName,Title
+from Employee where BirthDate NOT BETWEEN ('1950-01-01 00:00:00') and ('1969-12-31 23:59:59');
+
