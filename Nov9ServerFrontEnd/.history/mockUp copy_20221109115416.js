@@ -1,0 +1,18 @@
+window.addEventListener('DOMContentLoaded',()=>{
+    fetch('https://dummyjson.com/products/2')
+    .then(res=>res.json())
+    .then(json=>{
+        console.log(json);
+        const divTag = document.querySelector('#content');
+
+        // let tmp='';
+        // tmp += "<h3>" json.title+ "</h3>";
+
+        divTag.innerHTML =`
+        <h3>${json.title}</h3>
+        <p>${json.description}</p>
+        <img src=${json.thumbnail}>
+        `
+    })
+});
+
