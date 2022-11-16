@@ -1,0 +1,16 @@
+{
+  "name": "nov9serverfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverNov15Dean.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serverNov15Dean.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
