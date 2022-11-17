@@ -27,8 +27,7 @@
 
 //Practice without seeing 2:
 
-//textContent only uses the visible text and if css mentions text as display:none then in the
-//console of the dev tools, there won't be 
+//textContent only uses the visible text and if d
 document.body.append(document.createElement('div').innerText='Hello Beautiful World');
 
 

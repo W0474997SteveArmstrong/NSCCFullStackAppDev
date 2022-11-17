@@ -1,0 +1,1 @@
+document.body.append(document.createElement('div').innerText='Hello World');

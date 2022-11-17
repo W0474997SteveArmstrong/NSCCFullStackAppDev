@@ -27,13 +27,10 @@
 
 //Practice without seeing 2:
 
-//textContent only uses the visible text and if css mentions text as display:none then in the
-//console of the dev tools, there won't be 
 document.body.append(document.createElement('div').innerText='Hello Beautiful World');
 
 
 //here we can replace innerText with textContent and it will still work.
-//textContent shows both invisible and visible texts by picking straight from the html,
-//thereby ignoring the css
+
 document.body.append(document.createElement('div').textContent='Hello Beautiful World');
 

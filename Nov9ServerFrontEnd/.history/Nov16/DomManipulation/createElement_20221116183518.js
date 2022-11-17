@@ -1,0 +1,1 @@
+const divElem = document.createElement;

@@ -1,0 +1,4 @@
+//Method we use to add elements to the body
+const body = document.body
+body.append
+body.appendChild
