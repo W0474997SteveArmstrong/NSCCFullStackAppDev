@@ -1,10 +1,11 @@
 const tdTags = document.querySelectorAll('td');
 
 for(const tdTag of tdTags){
-tdTag.addEventListener('dblclick',why);
+tdTag.addEventListener('dblclick',makeEditable);
 }
-function why(){
-    alert('hey');
+function makeEditable(e){
+    console.dir(e);
+    //'dblclick and its properties get displayed in the console'
 }
 
 
