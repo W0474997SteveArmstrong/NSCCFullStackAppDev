@@ -1,8 +1,8 @@
-const tdTags = document.querySelector('td');
+const tdTag = document.querySelector('td');
 
-for(const tdTag of tdTags){
+for(const tdTag)
 tdTag.addEventListener('dblclick',why);
-}
+
 function why(){
     alert('hey');
 }
