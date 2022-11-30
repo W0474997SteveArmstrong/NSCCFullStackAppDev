@@ -17,8 +17,6 @@ function doUpdate(e) {
   updateJSON.LastName = allIds[2].textContent;
   updateJSON.Email = allIds[3].textContent;
   console.log(JSON.stringify(updateJSON));
-
-  //fetch(url,{method:'put',body:updateJSON})
 }
 function makeEditable(e) {
   // console.dir(e.target);

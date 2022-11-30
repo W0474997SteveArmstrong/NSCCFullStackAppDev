@@ -18,7 +18,7 @@ function doUpdate(e) {
   updateJSON.Email = allIds[3].textContent;
   console.log(JSON.stringify(updateJSON));
 
-  //fetch(url,{method:'put',body:updateJSON})
+  fetch(url,{})
 }
 function makeEditable(e) {
   // console.dir(e.target);
