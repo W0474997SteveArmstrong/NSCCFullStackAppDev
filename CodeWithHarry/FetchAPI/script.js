@@ -2,6 +2,11 @@
 //Here p stands for promise
 const url = "https://goweather.herokuapp.com/weather/Ny";
 let p =fetch(url);
+let p3 =fetch(url,{
+    headers:{
+        Authentication:'secret'
+    }
+})
 
 
 
@@ -13,11 +18,13 @@ let p =fetch(url);
 //     }
 // })
 
-p.then((response)=>{
-    //We only set headers for the request. Response headers are printed.
-    console.log(response.status);
-    console.log(response.ok);
-     return response.json()}).then((value2)=> console.log(value2))
+p3.then((response)=>{return response.json()}).then((value5)=>{console.log(value5)});
+
+// p.then((response)=>{
+//     //We only set headers for the request. Response headers are printed.
+//     console.log(response.status);
+//     console.log(response.ok);
+//      return response.json()}).then((value2)=> console.log(value2))
 
 
 
