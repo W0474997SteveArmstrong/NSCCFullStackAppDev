@@ -1,0 +1,3 @@
+on the server we move to express.js
+
+clint side use 

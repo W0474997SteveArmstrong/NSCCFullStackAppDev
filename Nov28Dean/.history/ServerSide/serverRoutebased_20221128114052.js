@@ -1,0 +1,21 @@
+const express = require('express');
+const router =express.Router();
+
+router.route('/customer')
+.get((req,res)=>{
+    res.send('<h1>Hello GET using router <h1>');
+})
+.post((req,res)=>{
+    res.send('<h1> HELLO POST using router <h1>');
+});
+
+router.route('/customer/:id')
+.delete((req,res)=>{
+    res.send('<h1>Hello Delete <h1>');
+})
+.put((req,res)=>{
+    res.send('<h1>Hello Put</h1>');
+})
+
+
+module.exports = router;

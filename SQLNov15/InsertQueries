@@ -1,0 +1,47 @@
+1.
+insert into ArtistDup (ArtistId, Name)
+values (972,'SteveArmstrong');
+
+2.
+insert into PlaylistDup (PlaylistId, Name)
+values (345,'Steve Playlist');
+
+3.
+insert into EmployeeDup (EmployeeId,FirstName,LastName)
+values (333,'Steve','Armstrong');
+
+4.
+update EmployeeDup
+set City = 'Kollam'
+where EmployeeId=333;
+
+5.
+insert into AlbumDup (AlbumId, Title, ArtistId)
+values (432,'Chicken Disco Explosion',52);
+
+6.
+insert into CustomerDup (CustomerId,FirstName,LastName)
+values (222,'Albert','Einstein');
+
+7.
+insert into EmployeeDup (FirstName,LastName)
+SELECT FirstName,LastName FROM CustomerDup where FirstName='Albert'
+
+8.
+insert into EmployeeDup (FirstName,LastName,Title)
+SELECT FirstName,LastName,'Sales Support Agent' FROM CustomerDup where city='Madrid'
+
+9.
+insert into InvoiceDup (InvoiceId)
+values (999);
+
+10.
+insert into PlaylistTrackDup (PlaylistId, TrackId)
+values (22,45);
+
+
+
+
+
+
+

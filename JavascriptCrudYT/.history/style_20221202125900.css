@@ -1,0 +1,11 @@
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table.list{
+    
+}

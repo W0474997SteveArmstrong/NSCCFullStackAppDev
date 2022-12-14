@@ -1,0 +1,131 @@
+1.
+select city,country
+from Customer;
+
+2.
+select city,country
+from Customer where country='Canada';
+
+3.
+
+select FirstName,LastName 
+from Customer where City='Prague';
+
+4.
+select *
+from Genre;
+
+5.
+select GenreId
+from Genre where Name='Reggae';
+
+6.
+select Name
+from Genre where GenreId=2;
+
+7.
+select *
+from Album;
+
+8.
+select ArtistId
+from Album where Title='Get Born';
+
+9.
+select Name
+from Album inner join Artist A on A.ArtistId = Album.ArtistId where Title='Get Born' ;
+
+10.
+select *
+from Artist where Name like '%Santana%';
+
+11.
+select count(*)
+from Artist where Name like '%Santana%';
+
+12.
+select *
+from Playlist;
+
+13.
+select *
+from Playlist where Name like '%Music';
+
+
+14.
+select *
+from Employee where BirthDate <='1959-12-31 23:59:59';
+
+15.
+select *
+from Employee where BirthDate between '1960-01-01' and '1966-12-31';
+
+16.
+select count(*)
+from Invoice;
+
+17.
+select BillingCity
+from Invoice where BillingCountry='France';
+
+18.
+select distinct BillingCity
+from Invoice where BillingCountry='France';
+
+19.
+select distinct BillingCity
+from Invoice where BillingCountry='France' order by BillingCity asc ;
+
+20.
+select distinct BillingCity as 'City Names'
+from Invoice where BillingCountry='France' order by BillingCity asc ;
+
+21.
+select name
+from Track order by name asc;
+
+22.
+select name
+from Track order by name desc ;
+
+23.
+select count(*)
+from Invoice where BillingCity='Berlin';
+
+24.
+select count(*),BillingCity
+from Invoice group by BillingCity;
+
+25.
+select count(*),BillingCity
+from Invoice group by BillingCity having count();
+
+26.
+select *,count(*)
+from Employee;
+
+27.
+insert into Employee(EmployeeId, LastName, FirstName, Title)
+values (100,'Armstrong','Steve','CEO');
+
+28.
+select *
+from Employee where Title='CEO';
+
+29.
+update Employee
+set Title = 'Career Entirely Over'
+where Title='CEO';
+
+30.
+delete
+from Employee
+where Title='%Over%';
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+1.
+update Artist
+set Name = 'Alice Escaped' where name='Alice In Chains';
+
+2.
+update Customer
+set Address = '12 Oak Street' where FirstName='Kathy';
+
+3.
+update Customer
+set City = 'Expensive View' where City='Mountain View';
+
+4.
+update Playlist
+set Name = 'Headbanger Classic' where Name='Heavy Metal Classic';
+
+5.
+update Artist
+set Name = 'Santana' where Name like 'Santana Feat%';
+
+6.
+update Genre
+set Name = 'Rock & Roll' where Name = 'Rock And Roll';
+
+7.
+update Invoice
+set BillingState = 'N/A' where BillingState is null ;
+
+8.
+update Customer
+set Company = 'TBD' where Country IN ('USA','Canada','United Kingdom');
+
+9.
+
+update Customer
+set Company = 'TBD' where Country IN ('USA','Canada','United Kingdom') and Company is null;
+
+10.
+
+select *
+from Employee where ReportsTo is not null ;
+

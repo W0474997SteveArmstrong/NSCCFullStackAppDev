@@ -1,0 +1,1 @@
+const customerData = document.querySelector()

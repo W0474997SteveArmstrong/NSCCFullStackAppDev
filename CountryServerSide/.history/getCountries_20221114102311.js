@@ -1,0 +1,16 @@
+//grab country data
+
+//Asynchronous 
+//We are parsing json using res.json()
+//document.querySelector('pre) ----> to get the data in pre. same thing happens when
+//we use res.json()
+
+//
+
+fetch("https://restcountries.com/v2/all")
+.then(res=>res.json())
+.then(data=>{
+
+    document.querySelector('#countries').i
+    //code goes here
+})

@@ -1,0 +1,8 @@
+Objective:
+Display the population density of 18 year olds in 2017
+
+Modus Operandi:
+First find the appropriate GeoJson we intend to use.
+Next draw a map
+Next find the right population met
+

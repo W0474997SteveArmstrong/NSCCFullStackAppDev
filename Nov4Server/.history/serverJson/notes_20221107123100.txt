@@ -1,0 +1,96 @@
+
+Example1
+---------
+
+html
+------
+
+<html>
+ <head>
+   <title>Capturing DOM Nodes with querySelector</title>
+ </head>
+ <body>
+   <h1>Hello, World!</h1>
+ </body>
+</html>
+
+
+JavaScript
+-----------
+let h1 = document.querySelector('h1');
+
+
+Output
+-------
+
+Hello, World!
+
+
+
+
+
+Example2
+--------
+
+<html>
+ <head>
+   <title>Capturing DOM Nodes with querySelector</title>
+ </head>
+ <body>
+   <h1>Hello, World!</h1>
+ </body>
+</html>
+
+
+let h1 = document.querySelector('h1');
+h1.innerHTML = 'Modified HTML using DOM';
+
+Output
+-------
+Modified HTML using DOM
+
+
+
+Example3
+---------
+<html>
+ <head>
+   <title>Accessing an Element Node's id attribute</title>
+ </head>
+ <body>
+   <h1 id="logo">Learn DOM Manipulation with Javascript</h1>
+ </body>
+</html>
+
+
+JavaScript
+-----------
+
+let h1 = document.querySelector('h1');
+clg(h1.id);
+
+Output
+--------
+logo
+
+
+
+Example4
+-----------
+
+html
+-----
+
+<html>
+ <head>
+   <title>Accessing an Element Node using ID's</title>
+ </head>
+ <body>
+   <h1 id="mainHeading">Learn DOM Manipulation with Javascript</h1>
+ </body>
+</html>
+
+JavaScript
+-----------
+
+let mainHeading

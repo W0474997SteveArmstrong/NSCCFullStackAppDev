@@ -1,0 +1,12 @@
+#genreInfoList
+{
+    background-color:beige;
+    overflow:auto;
+    height:300px;
+}
+td,th{
+    width: 100px;
+}
+th{
+    text-align:left;
+}

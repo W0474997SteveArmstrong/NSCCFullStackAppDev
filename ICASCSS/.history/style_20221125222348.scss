@@ -1,0 +1,9 @@
+@mixin myFonts($size)
+{
+    font-size: $size;
+    font-family: '';
+}
+
+body{
+    background-color: aliceblue;
+}

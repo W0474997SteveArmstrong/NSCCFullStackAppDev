@@ -1,0 +1,22 @@
+Objective:
+Display the population density of 18 year olds in 2017
+
+Modus Operandi:
+First find the appropriate GeoJson we intend to use.
+Next draw a map
+Next find the right population metrics from an api or dataset
+Next fill in those landmasses with the correct colour.
+Next add interactions
+
+
+Step by Step Modus Operandi:
+
+visit naturalearthdata.com for dataset
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+click on download countries to download it.
+Look for the .shp file in the zip file.
+convert the .shp file into GeoJson.
+
+https://github.com/mbostock/shapefile
+
+https://github.com/topojson/topojson

@@ -1,0 +1,33 @@
+
+Example1
+---------
+
+html
+------
+
+<html>
+ <head>
+   <title>Capturing DOM Nodes with querySelector</title>
+ </head>
+ <body>
+   <h1>Hello, World!</h1>
+ </body>
+</html>
+
+
+JavaScript
+-----------
+let h1 = document.querySelector('h1');
+
+
+Output
+-------
+
+Hello, World!
+
+
+
+
+
+Example2
+--------

@@ -1,0 +1,10 @@
+@mixin myFonts($size)
+{
+    font-size: $size;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    @include
+}

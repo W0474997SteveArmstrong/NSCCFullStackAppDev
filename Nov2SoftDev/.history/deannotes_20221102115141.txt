@@ -1,0 +1,6 @@
+on the server we move to express.js
+
+clint side use dom api
+jquery 
+
+build foundations and start to work our way u[]

@@ -1,0 +1,21 @@
+const numbers=[3,22,1,12,-1,-2];
+//construct a new array based on the filter u specify as a criteria
+
+const evenNumbers = numbers.filter(x=>x%2==0);
+console.log(evenNumbers);
+
+const evenPositiveNumbers = numbers.filter(x=>x%2==0 && x>0);
+console.log(evenPositiveNumbers);
+
+const names=['Dean','Fleur','Xi','DEAN'];
+
+console.log(names.includes('Xi'));
+
+//All names with a as the third letter
+
+const filteredNames = names.filter(thirdletterisA=>names.forEach(element => {
+   return element[2]=='a' || element[2]=='A'
+}));
+
+console.log("filteredNames is",filteredNames);
+

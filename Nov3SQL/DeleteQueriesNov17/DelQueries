@@ -1,0 +1,61 @@
+1.
+DELETE FROM Employee WHERE EmployeeId = 7
+
+2.update CustomerDup
+set  SupportRepId=3
+where SupportRepId=5;
+
+delete
+from EmployeeDup
+where FirstName='Steve' and LastName='Johnson';
+
+
+3.delete
+from InvoiceLineDup
+where TrackId=205;
+
+4.
+delete
+from PlaylistTrackDup
+where TrackId=205;
+
+5.delete
+from TrackDup
+where TrackId=205;
+
+6.
+delete
+from TrackDup
+where AlbumId=10;
+
+delete
+from AlbumDup
+where AlbumId=10;
+
+//We have delete from track tables as well since tracks are part of an album and when album itself is not there then there won't be tracks as well. As per ER diagram, we did the right thing by deleting the albums from tables which have dependency on albumId. But we have to rely on intuition as well.
+
+delete
+from PlaylistTrackDup
+where TrackId in
+(select TrackId
+from TrackDup where AlbumId=10)
+
+delete
+from InvoiceLineDup
+where TrackId in
+(select TrackId
+from TrackDup where AlbumId=10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
