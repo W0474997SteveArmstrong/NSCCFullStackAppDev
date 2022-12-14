@@ -1,0 +1,12 @@
+Step1
+
+Create ui.html file
+
+!
+
+Step2 
+give suitable title
+add form tag within the body and have a button to add the customer data
+leave action="" parameter of the form tag as empty.
+The form must have first name, last name and email as the form elements along
+with the button
