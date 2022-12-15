@@ -78,4 +78,4 @@ genreRouter.put('/:id',(req,res)=>{
 });
 
 
-app.listen(PORT,()=>console.log(`Your Genre server is alive on PORT ${PORT}`));
+app.listen(PORT,()=>console.log(`Your Genre server  is alive on PORT ${PORT}`));

@@ -3,7 +3,7 @@ const multer = require('multer');
 const Database = require('better-sqlite3');
 const cors = require('cors');
 //4.Demonstrates use of the better-sqlite3 library.
-const db =new Database('./db/Chinook_Sqlite.sqlite');
+const db =new Database('/db/Chinook_Sqlite.sqlite');
 //3.Demonstrates use of the Express.js Node library.
 const app =express();
 //5.Demonstrates use of your choice of body parser.
@@ -78,4 +78,4 @@ genreRouter.put('/:id',(req,res)=>{
 });
 
 
-app.listen(PORT,()=>console.log(`Your Genre server is alive on PORT ${PORT}`));
+app.listen(PORT,()=>console.log(`Your Genre server with try catch is alive on PORT ${PORT}`));

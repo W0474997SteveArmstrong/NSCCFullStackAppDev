@@ -11,11 +11,19 @@
 <body>
     <form>
         Name<input type="text" name="Name">
-        <input type="button" value="Add">
+        <input type="button" id="addGenreBtn" value="Add">
     </form>
     <h1>Table Name: Genre</h1>
-    <table id="genreInfoList" contenteditable="true">
+    <table id=""genreTable>
+        <thead>
+            <tr>
+                <th>Genre Id</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="genreInfoList">
+        </tbody>
     </table>
-    <div id="mainDiv"></div>
 </body>
 </html>
