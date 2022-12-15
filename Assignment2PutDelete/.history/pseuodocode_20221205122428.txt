@@ -1,0 +1,50 @@
+Step1
+
+Create ui.html file
+
+!
+
+Step2 
+give suitable title
+add form tag within the body and have a button to add the customer data
+leave action="" parameter of the form tag as empty or remove it all together.
+The form must have first name, last name and email as the form elements along
+with the button named Add
+
+Step3
+
+Create an empty div element which will allow us to perform DOM manipulation operations
+We give a name to this empty div as customerList
+
+-----In these 3 steps, our HTML portion is done.
+
+Now on to our next focus area which is client side code
+---------------------------------------------------------
+
+
+
+
+When the user interacts with the UI and fills the details in the form,
+upon clicking the add button, an event gets triggered and the client requests
+the server on behalf of the user to get the requested resource back from the server
+as a response.
+
+Step1
+
+our client will fetch data based on the provided url.
+This url is the port on which our server is running and the end point or API
+which the server is using to map itself to the database.
+
+
+const url = "give the url"
+use fetch and then keywords twice.
+We get the body of the json.
+
+We also try to do the binding of the button to an on click event, which allows us to 
+add the customer while clicking the button.
+
+
+
+
+
+

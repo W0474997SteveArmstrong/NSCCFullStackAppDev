@@ -1,0 +1,32 @@
+Step1
+
+Create ui.html file
+
+!
+
+Step2 
+give suitable title
+add form tag within the body and have a button to add the customer data
+leave action="" parameter of the form tag as empty or remove it all together.
+The form must have first name, last name and email as the form elements along
+with the button named Add
+
+Step3
+
+Create an empty div element which will allow us to perform DOM manipulation operations
+We give a name to this empty div as customerList
+
+-----In these 3 steps, our HTML portion is done.
+
+Now on to our next focus area which is server side code
+---------------------------------------------------------
+
+Step1
+
+our client will fetch data based on the provided url.
+
+const url = "give the url"
+
+
+
+
