@@ -60,7 +60,7 @@ genreRouter.get('',upload.none(),(req,res)=>{
 
 //1. Provides a PUT endpoint that updates a record in the Chinook database. The table cannot be the Employee table.
 
-genreRouter.put('/:id',upload.none(),(req,res)=>{
+genreRouter.put('/:id',upload.none()(req,res)=>{
     const result = {message: "", data: "", status: false}
     res.setHeader('Access-Control-Allow-Origin','*');
     const sql = `UPDATE Genre SET Name = ? WHERE GenreId= ?`;

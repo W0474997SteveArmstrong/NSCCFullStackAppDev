@@ -1,15 +1,17 @@
-document.querySelector("#addGenreBtn").addEventListener("click", addNewGenre);
+document
+  .querySelector("#addGenreBtn")
+  .addEventListener("click", addNewGenre);
 const GENRE_URL = `http://localhost:9876/genre`;
 
 function addEventListeners() {
   const allUpdateBtns = document.querySelectorAll(".edit-genre-btn");
   allUpdateBtns.forEach((updBtn) => {
-    updBtn.addEventListener("click", handleGenreEdit);
+    updBtn.addEventListener("click", handleGenreEdit)
   });
   const allDeletebtns = document.querySelectorAll(".delete-genre-btn");
   allDeletebtns.forEach((delBtn) => {
-    delBtn.addEventListener("click", handleGenreDel);
-  });
+    delBtn.addEventListener("click", handleGenreDel)
+  })
 }
 
 function getGenreInfo() {
@@ -51,32 +53,32 @@ function handleGenreDel(e) {
   e.preventDefault();
   const genreIdDel = e.target.getAttribute("data-genre-id");
   const reqBody = {
-    GenreId: genreIdDel,
+    GenreId: genreIdDel
   };
   const reqOptions = {
     method: "delete",
-    body: JSON.stringify(reqBody),
+    body: JSON.stringify(reqBody)
   };
-  fetch(GENRE_URL + `/${genreIdDel}`, reqOptions);
+  fetch(GENRE_URL + `/${genreIdDel}`, reqOptions)
 }
+
 
 function handleGenreEdit(e) {
   e.preventDefault();
   const genreId = e.target.getAttribute("data-genre-id");
-  const currentGenreName =
-    e.target.parentElement.parentElement.children[1].innerText;
+  const currentGenreName = e.target.parentElement.parentElement.children[1].innerText;
   const reqBody = {
-    Name: currentGenreName,
+    Name: currentGenreName
   };
   const reqOptions = {
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     method: "PUT",
-    body: JSON.stringify(reqBody),
+    body: JSON.stringify(reqBody)
   };
-  fetch(GENRE_URL + `/${genreId}`, reqOptions);
+  fetch(GENRE_URL + `/${genreId}`, reqOptions)
 }
 
 function addNewGenre() {

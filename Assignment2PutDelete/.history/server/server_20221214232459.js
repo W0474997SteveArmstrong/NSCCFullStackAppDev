@@ -2,16 +2,12 @@ const express = require('express');
 const multer = require('multer');
 const Database = require('better-sqlite3');
 const cors = require('cors');
-
-//3.Demonstrates use of the Express.js Node library.
-const app =express();
-
 //4.Demonstrates use of the better-sqlite3 library.
 const db =new Database('./db/Chinook_Sqlite.sqlite');
-
+//3.Demonstrates use of the Express.js Node library.
+const app =express();
 //5.Demonstrates use of your choice of body parser.
 const upload = multer();
-
 const PORT =process.env.PORT || 9876
 
 
@@ -58,21 +54,7 @@ genreRouter.get('',upload.none(),(req,res)=>{
 })
 
 
-//1. Provides a PUT endpoint that updates a record in the Chinook database. The table cannot be the Employee table.
 
-genreRouter.put('/:id',upload.none(),(req,res)=>{
-    const result = {message: "", data: "", status: false}
-    res.setHeader('Access-Control-Allow-Origin','*');
-    const sql = `UPDATE Genre SET Name = ? WHERE GenreId= ?`;
-    const statement = db.prepare(sql);
-    const statementRes =  statement.run([req.body.Name,req.params.id]);
-    result.message ="'The Genre has been updated as per your request'";
-    result.data = statementRes.changes;
-    result.status = true;
-    res.json(result);
-});
-
-//2. Provides a DELETE endpoint that deletes a row from a table within the Chinook database.
 
 genreRouter.delete('/:id',(req,res)=>{
     res.setHeader('Access-Control-Allow-Origin','*');
@@ -83,7 +65,19 @@ genreRouter.delete('/:id',(req,res)=>{
     
 });
 
+//1. Provides a PUT endpoint that updates a record in the Chinook database. The table cannot be the Employee table.
 
+genreRouter.put('/:id',(req,res)=>{
+    const result = {message: "", data: "", status: false}
+    res.setHeader('Access-Control-Allow-Origin','*');
+    const sql = `UPDATE Genre SET Name = ? WHERE GenreId= ?`;
+    const statement = db.prepare(sql);
+    const statementRes =  statement.run([req.body.Name,req.params.id]);
+    result.message ="'The Genre has been updated as per your request'";
+    result.data = statementRes.changes;
+    result.status = true;
+    res.json(result);
+});
 
 
 app.listen(PORT,()=>console.log(`Your Genre server is alive on PORT ${PORT}`));
