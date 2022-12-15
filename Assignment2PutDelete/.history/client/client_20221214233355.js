@@ -49,9 +49,12 @@ getGenreInfo();
 
 function handleGenreDel(e) {
   e.preventDefault();
-  const genreIdDel = e.target.getAttribute("data-genre-id");``
+  const genreIdDel = e.target.getAttribute("data-genre-id");
+  // const reqBody = {
+  //   GenreId: genreIdDel,
+  // };
   const reqOptions = {
-    method: "delete"
+    method: "delete",
   };
   fetch(GENRE_URL + `/${genreIdDel}`, reqOptions);
 }
