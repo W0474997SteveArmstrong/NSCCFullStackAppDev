@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Helloworld from './components/Helloworld/Helloworld';
+import Stockinfo from './components/Stockinfo/Stockinfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Helloworld greeting="Yo man" greeting2="yo yo man"/>
+          <br></br>
+          <Stockinfo Ticker="MSFT" Lastprice="3600"/>
+          </div>  
   );
 }
 
