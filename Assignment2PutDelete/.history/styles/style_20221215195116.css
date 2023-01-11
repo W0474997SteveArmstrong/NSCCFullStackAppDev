@@ -1,6 +1,6 @@
 #genreInfoList
 {
-    background-color:gainsboro;
+    background-color:beige;
     overflow:auto;
     height:300px;
     margin-top: 50px;
@@ -13,12 +13,12 @@ th{
     text-align:left;
 }
 h1{
-    color: #111112;
+    color: blue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
-    background-color:#bad8e2;
+    background-color:#02171d;
 }
 
 #addGenreBtn{
